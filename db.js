@@ -1,0 +1,6381 @@
+window.gameDatabase =
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is HTML and what is its primary purpose in web development?",
+      "answer": "HTML structures the content of web pages.",
+      "explanation": "It labels content such as headings, paragraphs, links, and images so browsers can interpret the document."
+    },
+    {
+      "id": 2,
+      "question": "What does the acronym HTML stand for?",
+      "answer": "HyperText Markup Language.",
+      "explanation": "Hypertext connects documents with links; markup describes the structure and meaning of content."
+    },
+    {
+      "id": 3,
+      "question": "What is the basic structure of an HTML document?",
+      "answer": "A doctype followed by an html element containing head and body.",
+      "explanation": "The head holds document metadata, while the body contains the page content. Example: <!DOCTYPE html><html><head><title>Quiz</title></head><body><p>Hello</p></body></html>."
+    },
+    {
+      "id": 4,
+      "question": "What is the purpose of the <!DOCTYPE html> declaration?",
+      "answer": "It tells the browser to use standards mode.",
+      "explanation": "<!DOCTYPE html> is a declaration, not a visible element. It prevents legacy quirks-mode rendering."
+    },
+    {
+      "id": 5,
+      "question": "What is the difference between the <head> and <body> elements?",
+      "answer": "head contains metadata; body contains page content.",
+      "explanation": "The title, metadata, and stylesheet links belong in head. Headings, paragraphs, and other displayed content belong in body."
+    },
+    {
+      "id": 6,
+      "question": "What are HTML elements?",
+      "answer": "Elements are the building blocks of an HTML document.",
+      "explanation": "Most have an opening tag, content, and a closing tag, such as <p>Hello</p>. Void elements such as <img> do not have closing tags."
+    },
+    {
+      "id": 7,
+      "question": "What are HTML attributes?",
+      "answer": "Attributes provide additional information or settings for elements.",
+      "explanation": "They appear in the opening tag, for example href in <a href=\"about.html\">About</a>."
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of the title tag?",
+      "answer": "It gives the document a title.",
+      "explanation": "Browsers use <title> for the tab label, and bookmarks commonly use it as their default name. It does not create a heading in the page body."
+    },
+    {
+      "id": 9,
+      "question": "What tag is used to create a paragraph in HTML?",
+      "answer": "The <p> tag.",
+      "explanation": "A paragraph groups related text: <p>Welcome to the quiz.</p>."
+    },
+    {
+      "id": 10,
+      "question": "What are heading tags in HTML?",
+      "answer": "<h1> through <h6>.",
+      "explanation": "These represent six heading levels. Choose levels to express the document hierarchy, rather than just to change text size."
+    },
+    {
+      "id": 11,
+      "question": "How do you create a hyperlink in HTML?",
+      "answer": "Use an <a> element with an href attribute.",
+      "explanation": "For example, <a href=\"about.html\">About us</a> creates a link to another page."
+    },
+    {
+      "id": 12,
+      "question": "What attribute specifies the destination of a hyperlink?",
+      "answer": "The href attribute.",
+      "explanation": "On an anchor element, href provides the destination URL or a fragment such as #contact for a location in the same page."
+    },
+    {
+      "id": 13,
+      "question": "How do you insert an image in HTML?",
+      "answer": "Use the <img> element with src and alt attributes.",
+      "explanation": "For example, <img src=\"logo.png\" alt=\"Company name\">. src identifies the image resource and alt supplies a text alternative."
+    },
+    {
+      "id": 14,
+      "question": "What is the purpose of the alt attribute in an image tag?",
+      "answer": "It supplies a text alternative for an image.",
+      "explanation": "Screen readers can announce it, and browsers can use it when an image cannot load. Purely decorative images should usually use alt=\"\"."
+    },
+    {
+      "id": 15,
+      "question": "What is the difference between ordered and unordered lists?",
+      "answer": "Ordered lists use <ol>; unordered lists use <ul>.",
+      "explanation": "Both contain <li> items. Use an ordered list when sequence matters and an unordered list when it does not."
+    },
+    {
+      "id": 16,
+      "question": "Which tags are used to create a table in HTML?",
+      "answer": "<table>, <tr>, <th>, and <td>.",
+      "explanation": "table wraps the table, tr defines a row, th defines a header cell, and td defines a data cell. thead and tbody can group rows."
+    },
+    {
+      "id": 17,
+      "question": "What is the purpose of the form element?",
+      "answer": "It groups controls for collecting and submitting user input.",
+      "explanation": "A form can contain inputs, labels, and buttons. Its action and method determine where and how a normal submission is sent."
+    },
+    {
+      "id": 18,
+      "question": "Name three common input types used in HTML forms.",
+      "answer": "text, email, and password.",
+      "explanation": "For example, <input type=\"email\"> requests an email address. Input types influence the controlâ€™s behavior and built-in validation."
+    },
+    {
+      "id": 19,
+      "question": "What is semantic HTML?",
+      "answer": "HTML that expresses the meaning of content.",
+      "explanation": "Using meaningful elements helps browsers, assistive technology, and developers understand a pageâ€™s structure."
+    },
+    {
+      "id": 20,
+      "question": "Give three examples of semantic HTML elements.",
+      "answer": "<header>, <nav>, and <article>.",
+      "explanation": "header represents introductory content, nav a navigation section, and article a self-contained composition."
+    },
+    {
+      "id": 21,
+      "question": "What is CSS and why is it used?",
+      "answer": "CSS controls the presentation and layout of web content.",
+      "explanation": "It lets you style colors, typography, spacing, and layout while keeping those rules separate from HTML structure."
+    },
+    {
+      "id": 22,
+      "question": "What does CSS stand for?",
+      "answer": "Cascading Style Sheets.",
+      "explanation": "The cascade is the process used to resolve competing style declarations for an element."
+    },
+    {
+      "id": 23,
+      "question": "What are the three ways to apply CSS to an HTML document?",
+      "answer": "Inline, internal, and external styles.",
+      "explanation": "Use a style attribute, a <style> element, or a linked .css file respectively."
+    },
+    {
+      "id": 24,
+      "question": "What is the difference between inline, internal, and external CSS?",
+      "answer": "Inline styles affect one element; internal styles live in the document; external styles live in a separate file.",
+      "explanation": "External stylesheets can be shared by multiple pages, making site-wide styling easier to maintain."
+    },
+    {
+      "id": 25,
+      "question": "How do you link an external CSS file to an HTML document?",
+      "answer": "Use <link rel=\"stylesheet\" href=\"style.css\"> in the head.",
+      "explanation": "The browser loads the referenced stylesheet and applies its matching rules to the document."
+    },
+    {
+      "id": 26,
+      "question": "What is a CSS selector?",
+      "answer": "A pattern that identifies which elements a style rule targets.",
+      "explanation": "For example, .notice selects elements whose class list includes notice."
+    },
+    {
+      "id": 27,
+      "question": "What is the difference between an ID selector and a class selector?",
+      "answer": "An ID selector uses #; a class selector uses a dot.",
+      "explanation": "#intro matches id=\"intro\", while .intro matches class=\"intro\". IDs should be unique within a document; classes can be reused. An ID selector has greater specificity than a class selector."
+    },
+    {
+      "id": 28,
+      "question": "How do you select all paragraph elements using CSS?",
+      "answer": "Use the p type selector.",
+      "explanation": "For example, p { color: navy; } applies to every paragraph matched by that rule."
+    },
+    {
+      "id": 29,
+      "question": "How do you change the text color of an element using CSS?",
+      "answer": "Use the color property.",
+      "explanation": "For example, p { color: blue; } makes paragraph text blue unless another applicable rule overrides it."
+    },
+    {
+      "id": 30,
+      "question": "How do you change the background color of an element?",
+      "answer": "Use background-color.",
+      "explanation": "For example, .card { background-color: white; } sets the elementâ€™s background color."
+    },
+    {
+      "id": 31,
+      "question": "What property is used to change the font size?",
+      "answer": "font-size.",
+      "explanation": "For example, p { font-size: 1.25rem; } sets text size relative to the root elementâ€™s font size."
+    },
+    {
+      "id": 32,
+      "question": "What property is used to make text bold?",
+      "answer": "font-weight.",
+      "explanation": "For example, strong { font-weight: bold; }. The numeric value 700 commonly corresponds to bold, subject to the fontâ€™s available weights."
+    },
+    {
+      "id": 33,
+      "question": "Explain the CSS box model.",
+      "answer": "Content, padding, border, and margin.",
+      "explanation": "Padding surrounds the content, the border surrounds the padding, and margin adds outer spacing. With box-sizing: border-box, declared width includes padding and border."
+    },
+    {
+      "id": 34,
+      "question": "What is the difference between margin and padding?",
+      "answer": "Margin is outside the border; padding is inside it.",
+      "explanation": "Padding separates content from its border. Margin separates the elementâ€™s box from neighboring boxes; vertical margins can sometimes collapse."
+    },
+    {
+      "id": 35,
+      "question": "What is the default position value in CSS?",
+      "answer": "static.",
+      "explanation": "A statically positioned element follows normal layout, and top, right, bottom, and left do not offset it."
+    },
+    {
+      "id": 36,
+      "question": "What are the different values of the position property?",
+      "answer": "static, relative, absolute, fixed, and sticky.",
+      "explanation": "Relative preserves normal-flow space; absolute leaves normal flow; fixed commonly anchors to the viewport; sticky follows flow then sticks within its scrolling constraints."
+    },
+    {
+      "id": 37,
+      "question": "What is Flexbox in CSS?",
+      "answer": "A one-dimensional layout system.",
+      "explanation": "With display: flex, a container arranges children along a main axis and supports alignment, spacing, and wrapping."
+    },
+    {
+      "id": 38,
+      "question": "What is CSS Grid?",
+      "answer": "A two-dimensional layout system.",
+      "explanation": "With display: grid, a container places items in rows and columns, making coordinated page and component layouts easier."
+    },
+    {
+      "id": 39,
+      "question": "What is the purpose of media queries?",
+      "answer": "They conditionally apply CSS based on media features.",
+      "explanation": "For example, @media (min-width: 768px) { ... } applies its rules when the viewport is at least 768 CSS pixels wide."
+    },
+    {
+      "id": 40,
+      "question": "How can you make a website responsive using CSS?",
+      "answer": "Use flexible layouts, responsive media, and media queries.",
+      "explanation": "Flexbox or Grid, relative sizing, and images constrained to their container help content adapt. A viewport meta tag also helps mobile browsers use the intended viewport width."
+    },
+    {
+      "id": 41,
+      "question": "What is Bootstrap?",
+      "answer": "A frontend toolkit for building responsive websites.",
+      "explanation": "Bootstrap supplies CSS layouts, utilities, and components, plus JavaScript for interactive components."
+    },
+    {
+      "id": 42,
+      "question": "Who developed Bootstrap?",
+      "answer": "Mark Otto and Jacob Thornton at Twitter.",
+      "explanation": "Bootstrap began as an internal Twitter project and was later released as an open-source toolkit."
+    },
+    {
+      "id": 43,
+      "question": "What are the advantages of using Bootstrap?",
+      "answer": "Reusable components, responsive layouts, and consistent styling.",
+      "explanation": "Using established patterns reduces repetitive styling work, although accessibility and customization still need attention."
+    },
+    {
+      "id": 44,
+      "question": "How do you include Bootstrap in a project?",
+      "answer": "Include its CSS and, when needed, its JavaScript.",
+      "explanation": "You can use a CDN, downloaded files, or a package manager. Interactive components may require the Bootstrap JavaScript bundle; use files from the same version."
+    },
+    {
+      "id": 45,
+      "question": "What is the Bootstrap grid system?",
+      "answer": "A responsive layout system built from containers, rows, and columns.",
+      "explanation": "In Bootstrapâ€™s default grid, columns divide a row into portions of a 12-column layout and can change at breakpoints."
+    },
+    {
+      "id": 46,
+      "question": "How many columns are in the Bootstrap grid system?",
+      "answer": "12 columns by default.",
+      "explanation": "A .col-6 spans half the available 12-column row; two such columns fill it. The grid can be customized when compiling Bootstrap."
+    },
+    {
+      "id": 47,
+      "question": "What is the difference between container and container-fluid in Bootstrap?",
+      "answer": ".container uses responsive maximum widths; .container-fluid stays 100% wide.",
+      "explanation": "At larger breakpoints, a default container is capped to a set width. Both provide horizontal padding by default."
+    },
+    {
+      "id": 48,
+      "question": "What are Bootstrap utility classes?",
+      "answer": "Small classes that apply a focused styling rule.",
+      "explanation": "Examples include .d-flex for display, .text-center for text alignment, and .mt-3 for top margin."
+    },
+    {
+      "id": 49,
+      "question": "What class is used to create a responsive row in Bootstrap?",
+      "answer": ".row.",
+      "explanation": "Place column elements inside a .row, usually within a container. The row coordinates column wrapping and gutters."
+    },
+    {
+      "id": 50,
+      "question": "How do you create equal-width columns in Bootstrap?",
+      "answer": "Use .col on each sibling column.",
+      "explanation": "For example, two <div class=\"col\"> elements inside a .row share the available width equally when neither has a fixed column size."
+    },
+    {
+      "id": 51,
+      "question": "What Bootstrap class is used to create a button?",
+      "answer": ".btn.",
+      "explanation": "Combine the base button class with a variant such as .btn-primary to give it the intended visual treatment."
+    },
+    {
+      "id": 52,
+      "question": "How do you create a primary button in Bootstrap?",
+      "answer": "Use class=\"btn btn-primary\" on a button.",
+      "explanation": "For example, <button class=\"btn btn-primary\">Start</button>. btn supplies the base styling and btn-primary supplies the primary variant."
+    },
+    {
+      "id": 53,
+      "question": "What Bootstrap class makes an image responsive?",
+      "answer": ".img-fluid.",
+      "explanation": "In Bootstrap 5, this sets max-width: 100% and height: auto so an image can shrink with its parent while preserving its aspect ratio."
+    },
+    {
+      "id": 54,
+      "question": "What is the purpose of the Bootstrap navbar component?",
+      "answer": "It provides a responsive navigation header.",
+      "explanation": "A navbar can contain branding and links. Collapsible navigation requires suitable markup and Bootstrapâ€™s Collapse JavaScript behavior."
+    },
+    {
+      "id": 55,
+      "question": "How do you create a Bootstrap card?",
+      "answer": "Wrap content in .card and use .card-body for its main content.",
+      "explanation": "For example, <div class=\"card\"><div class=\"card-body\">Hello</div></div>. Optional classes include .card-title and .card-text."
+    },
+    {
+      "id": 56,
+      "question": "What Bootstrap class is used to create an alert message?",
+      "answer": ".alert with a variant such as .alert-success.",
+      "explanation": "For example, <div class=\"alert alert-success\" role=\"alert\">Saved</div>. Do not rely on color alone to communicate the message."
+    },
+    {
+      "id": 57,
+      "question": "What is the purpose of Bootstrap's spacing utilities?",
+      "answer": "They quickly apply margin and padding.",
+      "explanation": "Their names describe spacing type, side, and size, such as mt-3 for top margin and p-4 for padding on every side."
+    },
+    {
+      "id": 58,
+      "question": "What does the class mt-3 mean in Bootstrap?",
+      "answer": "Top margin at spacing level 3.",
+      "explanation": "In Bootstrap 5â€™s default spacing scale, mt-3 applies margin-top: 1rem. Custom Sass settings can change that value."
+    },
+    {
+      "id": 59,
+      "question": "What does the class p-4 mean in Bootstrap?",
+      "answer": "Padding on all sides at spacing level 4.",
+      "explanation": "In Bootstrap 5â€™s default spacing scale, p-4 applies 1.5rem of padding to every side. Custom spacing settings can change the value."
+    },
+    {
+      "id": 60,
+      "question": "How can Bootstrap help speed up web development?",
+      "answer": "It provides ready-made layouts, utilities, and components.",
+      "explanation": "Developers can assemble common interface patterns quickly and customize them instead of writing every style and behavior from scratch."
+    }
+  ],
+  "alldepartmentQuestions": [
+  {
+    "id": 1,
+    "answer": "Central Processing Unit (CPU)",
+    "explanation": "The correct answer is C) Central Processing Unit (CPU).",
+    "correctOption": "C",
+    "options": [
+      {
+        "text": "RAM",
+        "label": "A"
+      },
+      {
+        "text": "Hard Disk Drive",
+        "label": "B"
+      },
+      {
+        "text": "Central Processing Unit (CPU)",
+        "label": "C"
+      },
+      {
+        "text": "Power Supply Unit",
+        "label": "D"
+      }
+    ],
+    "question": "Which component of a computer is primarily responsible for executing instructions?"
+  },
+  {
+    "id": 2,
+    "answer": "Internet-based computing services",
+    "explanation": "The correct answer is B) Internet-based computing services.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "Local data storage",
+        "label": "A"
+      },
+      {
+        "text": "Internet-based computing services",
+        "label": "B"
+      },
+      {
+        "text": "Offline data processing",
+        "label": "C"
+      },
+      {
+        "text": "Physical server maintenance",
+        "label": "D"
+      }
+    ],
+    "question": "What does \"cloud computing\" primarily refer to?"
+  },
+  {
+    "id": 3,
+    "answer": "HTTPS",
+    "explanation": "The correct answer is C) HTTPS.",
+    "correctOption": "C",
+    "options": [
+      {
+        "text": "HTTP",
+        "label": "A"
+      },
+      {
+        "text": "FTP",
+        "label": "B"
+      },
+      {
+        "text": "HTTPS",
+        "label": "C"
+      },
+      {
+        "text": "SMTP",
+        "label": "D"
+      }
+    ],
+    "question": "Which protocol is used to securely browse websites?"
+  },
+  {
+    "id": 4,
+    "answer": "Fraudulent attempt to obtain sensitive information",
+    "explanation": "The correct answer is C) Fraudulent attempt to obtain sensitive information.",
+    "correctOption": "C",
+    "options": [
+      {
+        "text": "Malware scanning",
+        "label": "A"
+      },
+      {
+        "text": "Unauthorized data encryption",
+        "label": "B"
+      },
+      {
+        "text": "Fraudulent attempt to obtain sensitive information",
+        "label": "C"
+      },
+      {
+        "text": "Data backup process",
+        "label": "D"
+      }
+    ],
+    "question": "What is phishing?"
+  },
+  {
+    "id": 5,
+    "answer": "Block unauthorized access",
+    "explanation": "The correct answer is B) Block unauthorized access.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "Compress files",
+        "label": "A"
+      },
+      {
+        "text": "Block unauthorized access",
+        "label": "B"
+      },
+      {
+        "text": "Increase internet speed",
+        "label": "C"
+      },
+      {
+        "text": "Store backup data",
+        "label": "D"
+      }
+    ],
+    "question": "What is the function of a firewall?"
+  },
+  {
+    "id": 6,
+    "answer": "Shut down",
+    "explanation": "The correct answer is C) Shut down.",
+    "correctOption": "C",
+    "options": [
+      {
+        "text": "Restart",
+        "label": "A"
+      },
+      {
+        "text": "Sleep",
+        "label": "B"
+      },
+      {
+        "text": "Shut down",
+        "label": "C"
+      },
+      {
+        "text": "Log off",
+        "label": "D"
+      }
+    ],
+    "question": "Which button is used to turn off a computer safely?"
+  },
+  {
+    "id": 7,
+    "answer": "Portable Document Format",
+    "explanation": "The correct answer is B) Portable Document Format.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "Personal Document File",
+        "label": "A"
+      },
+      {
+        "text": "Portable Document Format",
+        "label": "B"
+      },
+      {
+        "text": "Printed Data File",
+        "label": "C"
+      },
+      {
+        "text": "Public Document Folder",
+        "label": "D"
+      }
+    ],
+    "question": "What does \"PDF\" stand for?"
+  },
+  {
+    "id": 8,
+    "answer": "Google Chrome",
+    "explanation": "The correct answer is B) Google Chrome.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "Microsoft Word",
+        "label": "A"
+      },
+      {
+        "text": "Google Chrome",
+        "label": "B"
+      },
+      {
+        "text": "Excel",
+        "label": "C"
+      },
+      {
+        "text": "PowerPoint",
+        "label": "D"
+      }
+    ],
+    "question": "Which of these is a web browser?"
+  },
+  {
+    "id": 9,
+    "answer": "Copy a file from the internet to your device",
+    "explanation": "The correct answer is B) Copy a file from the internet to your device.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "Send a file to another person",
+        "label": "A"
+      },
+      {
+        "text": "Copy a file from the internet to your device",
+        "label": "B"
+      },
+      {
+        "text": "Delete a file",
+        "label": "C"
+      },
+      {
+        "text": "Print a file",
+        "label": "D"
+      }
+    ],
+    "question": "What does \"download\" mean?"
+  },
+  {
+    "id": 10,
+    "answer": "Your account or device",
+    "explanation": "The correct answer is A) Your account or device.",
+    "correctOption": "A",
+    "options": [
+      {
+        "text": "Your account or device",
+        "label": "A"
+      },
+      {
+        "text": "Your printer",
+        "label": "B"
+      },
+      {
+        "text": "Your mouse",
+        "label": "C"
+      },
+      {
+        "text": "Your screen brightness",
+        "label": "D"
+      }
+    ],
+    "question": "What does \"password\" protect?"
+  },
+  {
+    "id": 11,
+    "answer": "Bosun Tijani",
+    "explanation": "The correct answer is A) Bosun Tijani.",
+    "correctOption": "A",
+    "options": [
+      {
+        "text": "Bosun Tijani",
+        "label": "A"
+      },
+      {
+        "text": "Kashifu Inuwa Abdullahi",
+        "label": "B"
+      },
+      {
+        "text": "Isa Pantami",
+        "label": "C"
+      },
+      {
+        "text": "Tosin Eniolorunda",
+        "label": "D"
+      }
+    ],
+    "question": "Who is the Minister of Communications, Innovation and Digital Economy in Nigeria?"
+  },
+  {
+    "id": 12,
+    "answer": "AutoCredit",
+    "explanation": "The correct answer is A) AutoCredit.",
+    "correctOption": "A",
+    "options": [
+      {
+        "text": "AutoCredit",
+        "label": "A"
+      },
+      {
+        "text": "Paystack",
+        "label": "B"
+      },
+      {
+        "text": "Flutterwave",
+        "label": "C"
+      },
+      {
+        "text": "OPay",
+        "label": "D"
+      }
+    ],
+    "question": "Monipay is a subsidiary of which company?"
+  },
+  {
+    "id": 13,
+    "answer": "National Information Technology Development Agency",
+    "explanation": "The correct answer is A) National Information Technology Development Agency.",
+    "correctOption": "A",
+    "options": [
+      {
+        "text": "National Information Technology Development Agency",
+        "label": "A"
+      },
+      {
+        "text": "Nigerian Internet and Telecom Authority",
+        "label": "B"
+      },
+      {
+        "text": "National Innovation and Tech Agency",
+        "label": "C"
+      },
+      {
+        "text": "Nigeria IT Data Association",
+        "label": "D"
+      }
+    ],
+    "question": "What does \"NITDA\" stand for?"
+  },
+  {
+    "id": 14,
+    "answer": "Internet Protocol address",
+    "explanation": "The correct answer is A) Internet Protocol address.",
+    "correctOption": "A",
+    "options": [
+      {
+        "text": "Internet Protocol address",
+        "label": "A"
+      },
+      {
+        "text": "Internal Program address",
+        "label": "B"
+      },
+      {
+        "text": "Integrated Process address",
+        "label": "C"
+      },
+      {
+        "text": "Internet Provider access",
+        "label": "D"
+      }
+    ],
+    "question": "What does \"IP address\" stand for?"
+  },
+  {
+    "id": 15,
+    "answer": "Finding and fixing errors in code",
+    "explanation": "The correct answer is B) Finding and fixing errors in code.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "Writing new code",
+        "label": "A"
+      },
+      {
+        "text": "Finding and fixing errors in code",
+        "label": "B"
+      },
+      {
+        "text": "Deleting old files",
+        "label": "C"
+      },
+      {
+        "text": "Designing a user interface",
+        "label": "D"
+      }
+    ],
+    "question": "In software development, what does \"debugging\" mean?"
+  },
+  {
+    "id": 16,
+    "answer": "Storing and organizing data",
+    "explanation": "The correct answer is B) Storing and organizing data.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "Sending emails",
+        "label": "A"
+      },
+      {
+        "text": "Storing and organizing data",
+        "label": "B"
+      },
+      {
+        "text": "Browsing the internet",
+        "label": "C"
+      },
+      {
+        "text": "Editing videos",
+        "label": "D"
+      }
+    ],
+    "question": "What is a \"database\" primarily used for?"
+  },
+  {
+    "id": 17,
+    "answer": "Two-Factor Authentication",
+    "explanation": "The correct answer is A) Two-Factor Authentication.",
+    "correctOption": "A",
+    "options": [
+      {
+        "text": "Two-Factor Authentication",
+        "label": "A"
+      },
+      {
+        "text": "Two-File Access",
+        "label": "B"
+      },
+      {
+        "text": "Double Firewall Application",
+        "label": "C"
+      },
+      {
+        "text": "Two-Form Authorization",
+        "label": "D"
+      }
+    ],
+    "question": "What does \"2FA\" stand for in cybersecurity?"
+  },
+  {
+    "id": 18,
+    "answer": "Nigeria Data Protection Commission",
+    "explanation": "The correct answer is A) Nigeria Data Protection Commission.",
+    "correctOption": "A",
+    "options": [
+      {
+        "text": "Nigeria Data Protection Commission",
+        "label": "A"
+      },
+      {
+        "text": "Nigerian Digital Policy Commission",
+        "label": "B"
+      },
+      {
+        "text": "National Data Processing Centre",
+        "label": "C"
+      },
+      {
+        "text": "Nigeria Development Planning Commission",
+        "label": "D"
+      }
+    ],
+    "question": "What does \"NDPC\" stand for?"
+  },
+  {
+    "id": 19,
+    "answer": "Hope PSB",
+    "explanation": "The correct answer is B) Hope PSB.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "Kuda",
+        "label": "A"
+      },
+      {
+        "text": "Hope PSB",
+        "label": "B"
+      },
+      {
+        "text": "ALAT",
+        "label": "C"
+      },
+      {
+        "text": "VBank",
+        "label": "D"
+      }
+    ],
+    "question": "Which of these is a Nigerian Payment Service Bank (PSB)?"
+  },
+  {
+    "id": 20,
+    "answer": "Freelancing platforms",
+    "explanation": "The correct answer is B) Freelancing platforms.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "Social media platforms",
+        "label": "A"
+      },
+      {
+        "text": "Freelancing platforms",
+        "label": "B"
+      },
+      {
+        "text": "Payment gateways",
+        "label": "C"
+      },
+      {
+        "text": "Digital banks",
+        "label": "D"
+      }
+    ],
+    "question": "Fiverr and Upwork are best described as:"
+  },
+  {
+    "id": 21,
+    "answer": "of",
+    "explanation": "The correct answer is A) of.",
+    "correctOption": "A",
+    "options": [
+      {
+        "text": "of",
+        "label": "A"
+      },
+      {
+        "text": "from",
+        "label": "B"
+      },
+      {
+        "text": "by",
+        "label": "C"
+      },
+      {
+        "text": "with",
+        "label": "D"
+      }
+    ],
+    "question": "He died ___ cancer."
+  },
+  {
+    "id": 22,
+    "answer": "at",
+    "explanation": "The correct answer is B) at.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "in",
+        "label": "A"
+      },
+      {
+        "text": "at",
+        "label": "B"
+      },
+      {
+        "text": "on",
+        "label": "C"
+      },
+      {
+        "text": "for",
+        "label": "D"
+      }
+    ],
+    "question": "She is good ___ mathematics."
+  },
+  {
+    "id": 23,
+    "answer": "since",
+    "explanation": "The correct answer is B) since.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "for",
+        "label": "A"
+      },
+      {
+        "text": "since",
+        "label": "B"
+      },
+      {
+        "text": "from",
+        "label": "C"
+      },
+      {
+        "text": "during",
+        "label": "D"
+      }
+    ],
+    "question": "I have been living here ___ 2020."
+  },
+  {
+    "id": 24,
+    "answer": "is",
+    "explanation": "The correct answer is B) is.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "are",
+        "label": "A"
+      },
+      {
+        "text": "is",
+        "label": "B"
+      },
+      {
+        "text": "were",
+        "label": "C"
+      },
+      {
+        "text": "have",
+        "label": "D"
+      }
+    ],
+    "question": "Neither of the boys ___ ready."
+  },
+  {
+    "id": 25,
+    "answer": "open",
+    "explanation": "The correct answer is A) open.",
+    "correctOption": "A",
+    "options": [
+      {
+        "text": "open",
+        "label": "A"
+      },
+      {
+        "text": "opens",
+        "label": "B"
+      },
+      {
+        "text": "opening",
+        "label": "C"
+      },
+      {
+        "text": "opened",
+        "label": "D"
+      }
+    ],
+    "question": "The teacher asked us to ___ our books."
+  },
+  {
+    "id": 26,
+    "answer": "whose",
+    "explanation": "The correct answer is B) whose.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "who",
+        "label": "A"
+      },
+      {
+        "text": "whose",
+        "label": "B"
+      },
+      {
+        "text": "which",
+        "label": "C"
+      },
+      {
+        "text": "whom",
+        "label": "D"
+      }
+    ],
+    "question": "He is the man ___ car was stolen."
+  },
+  {
+    "id": 27,
+    "answer": "were",
+    "explanation": "The correct answer is C) were.",
+    "correctOption": "C",
+    "options": [
+      {
+        "text": "am",
+        "label": "A"
+      },
+      {
+        "text": "was",
+        "label": "B"
+      },
+      {
+        "text": "were",
+        "label": "C"
+      },
+      {
+        "text": "be",
+        "label": "D"
+      }
+    ],
+    "question": "If I ___ you, I would apologize."
+  },
+  {
+    "id": 28,
+    "answer": "for",
+    "explanation": "The correct answer is B) for.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "since",
+        "label": "A"
+      },
+      {
+        "text": "for",
+        "label": "B"
+      },
+      {
+        "text": "from",
+        "label": "C"
+      },
+      {
+        "text": "during",
+        "label": "D"
+      }
+    ],
+    "question": "She has been working here ___ five years."
+  },
+  {
+    "id": 29,
+    "answer": "because of",
+    "explanation": "The correct answer is B) because of.",
+    "correctOption": "B",
+    "options": [
+      {
+        "text": "because",
+        "label": "A"
+      },
+      {
+        "text": "because of",
+        "label": "B"
+      },
+      {
+        "text": "although",
+        "label": "C"
+      },
+      {
+        "text": "so",
+        "label": "D"
+      }
+    ],
+    "question": "The meeting was postponed ___ the rain."
+  },
+  {
+    "id": 30,
+    "answer": "in",
+    "explanation": "The correct answer is C) in.",
+    "correctOption": "C",
+    "options": [
+      {
+        "text": "on",
+        "label": "A"
+      },
+      {
+        "text": "at",
+        "label": "B"
+      },
+      {
+        "text": "in",
+        "label": "C"
+      },
+      {
+        "text": "for",
+        "label": "D"
+      }
+    ],
+    "question": "He is interested ___ learning French."
+  }
+],
+  "Situational Judgement & Analysis": [
+    {
+      "id": 1,
+      "question": "You are analyzing sales data for a company. Revenue increased by 30% this quarter, but management says profitability has fallen. What should you investigate first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Increase the number of dashboard charts"
+        },
+        {
+          "label": "B",
+          "text": "Delete unusually large transactions"
+        },
+        {
+          "label": "C",
+          "text": "Compare revenue with costs, margins, discounts, refunds, and transaction volume"
+        },
+        {
+          "label": "D",
+          "text": "Assume the additional revenue automatically means improved business performance"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Compare revenue with costs, margins, discounts, refunds, and transaction volume",
+      "explanation": "The correct answer is C) Compare revenue with costs, margins, discounts, refunds, and transaction volume."
+    },
+    {
+      "id": 2,
+      "question": "You are a cybersecurity analyst and notice that an employee's account successfully logged in from Lagos at 9:00 AM and from London at 9:07 AM. What should you investigate first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Whether the employee recently changed their password"
+        },
+        {
+          "label": "B",
+          "text": "Whether the employee uses a large monitor"
+        },
+        {
+          "label": "C",
+          "text": "Whether the company firewall needs replacing"
+        },
+        {
+          "label": "D",
+          "text": "Whether the two login locations could indicate a compromised account or unusual authentication activity"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Whether the two login locations could indicate a compromised account or unusual authentication activity",
+      "explanation": "The correct answer is D) Whether the two login locations could indicate a compromised account or unusual authentication activity."
+    },
+    {
+      "id": 3,
+      "question": "A company's website looks correct on a developer's laptop but several users report that the navigation menu overlaps the content on mobile devices. What would you investigate first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Responsive CSS rules, viewport behavior, and device-specific layout breakpoints"
+        },
+        {
+          "label": "B",
+          "text": "The company's database indexes"
+        },
+        {
+          "label": "C",
+          "text": "The server's password policy"
+        },
+        {
+          "label": "D",
+          "text": "The application's SQL queries"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Responsive CSS rules, viewport behavior, and device-specific layout breakpoints",
+      "explanation": "The correct answer is A) Responsive CSS rules, viewport behavior, and device-specific layout breakpoints."
+    },
+    {
+      "id": 4,
+      "question": "An e-commerce application works correctly when 50 users are online but becomes extremely slow when traffic reaches 10,000 users. The database CPU is also close to 100%. What should the backend team investigate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The font family used by the website"
+        },
+        {
+          "label": "B",
+          "text": "Database queries, indexing, connection management, caching, and scalability"
+        },
+        {
+          "label": "C",
+          "text": "The color contrast of the checkout button"
+        },
+        {
+          "label": "D",
+          "text": "The company's social media strategy"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Database queries, indexing, connection management, caching, and scalability",
+      "explanation": "The correct answer is B) Database queries, indexing, connection management, caching, and scalability."
+    },
+    {
+      "id": 5,
+      "question": "During usability testing, users repeatedly click an image expecting it to open another page, but nothing happens. What should the UX team consider?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Increasing the database server's RAM"
+        },
+        {
+          "label": "B",
+          "text": "Changing the application's programming language"
+        },
+        {
+          "label": "C",
+          "text": "Removing all images from the interface"
+        },
+        {
+          "label": "D",
+          "text": "Improving the visual cues and interaction behavior so the element's purpose is clear"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Improving the visual cues and interaction behavior so the element's purpose is clear",
+      "explanation": "The correct answer is D) Improving the visual cues and interaction behavior so the element's purpose is clear."
+    },
+    {
+      "id": 6,
+      "question": "You receive an Excel file containing 500,000 customer records. Several customers appear multiple times, but some legitimate customers also share similar names. What is the safest approach?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Delete every repeated name"
+        },
+        {
+          "label": "B",
+          "text": "Keep only the first occurrence of each name"
+        },
+        {
+          "label": "C",
+          "text": "Use appropriate identifiers and matching criteria before deciding which records are duplicates"
+        },
+        {
+          "label": "D",
+          "text": "Convert the entire dataset into PDF format"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Use appropriate identifiers and matching criteria before deciding which records are duplicates",
+      "explanation": "The correct answer is C) Use appropriate identifiers and matching criteria before deciding which records are duplicates."
+    },
+    {
+      "id": 7,
+      "question": "A company discovers that an employee accidentally uploaded confidential customer information to a public cloud folder. What should happen first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Contain the exposure, restrict access, preserve evidence, and begin the incident-response process"
+        },
+        {
+          "label": "B",
+          "text": "Immediately delete every employee's cloud account"
+        },
+        {
+          "label": "C",
+          "text": "Ignore the incident if nobody has complained"
+        },
+        {
+          "label": "D",
+          "text": "Publish the incident on social media"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Contain the exposure, restrict access, preserve evidence, and begin the incident-response process",
+      "explanation": "The correct answer is A) Contain the exposure, restrict access, preserve evidence, and begin the incident-response process."
+    },
+    {
+      "id": 8,
+      "question": "A frontend developer receives an API response containing 10,000 records, although the page only displays 20 at a time. The page takes several seconds to load. What would be a sensible improvement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Increase the font size"
+        },
+        {
+          "label": "B",
+          "text": "Remove all CSS"
+        },
+        {
+          "label": "C",
+          "text": "Store the records permanently in the browser"
+        },
+        {
+          "label": "D",
+          "text": "Implement pagination, filtering, or server-side querying so only necessary data is retrieved"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Implement pagination, filtering, or server-side querying so only necessary data is retrieved",
+      "explanation": "The correct answer is D) Implement pagination, filtering, or server-side querying so only necessary data is retrieved."
+    },
+    {
+      "id": 9,
+      "question": "A customer says, \"I know exactly what I want to do on your website, but I can't figure out where to click.\" Which issue should a UX designer investigate first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Server CPU utilization"
+        },
+        {
+          "label": "B",
+          "text": "Database normalization"
+        },
+        {
+          "label": "C",
+          "text": "Navigation, information architecture, labels, and affordances"
+        },
+        {
+          "label": "D",
+          "text": "Programming language version"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Navigation, information architecture, labels, and affordances",
+      "explanation": "The correct answer is C) Navigation, information architecture, labels, and affordances."
+    },
+    {
+      "id": 10,
+      "question": "An analyst notices that customers who receive more marketing emails tend to make more purchases. The marketing manager concludes that sending more emails will definitely increase sales. What should the analyst do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Immediately recommend sending more emails"
+        },
+        {
+          "label": "B",
+          "text": "Investigate whether other factors or reverse causation could explain the relationship and consider an experiment"
+        },
+        {
+          "label": "C",
+          "text": "Remove the marketing data"
+        },
+        {
+          "label": "D",
+          "text": "Report that correlation proves the marketing emails caused the purchases"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Investigate whether other factors or reverse causation could explain the relationship and consider an experiment",
+      "explanation": "The correct answer is B) Investigate whether other factors or reverse causation could explain the relationship and consider an experiment."
+    },
+    {
+      "id": 11,
+      "question": "A web application allows users to enter comments. A security tester discovers that malicious HTML entered into a comment can execute when another user views it. What vulnerability is most likely involved?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cross-Site Scripting (XSS)"
+        },
+        {
+          "label": "B",
+          "text": "Denial-of-Service"
+        },
+        {
+          "label": "C",
+          "text": "DNS poisoning"
+        },
+        {
+          "label": "D",
+          "text": "Brute-force authentication"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Cross-Site Scripting (XSS)",
+      "explanation": "The correct answer is A) Cross-Site Scripting (XSS)."
+    },
+    {
+      "id": 12,
+      "question": "A backend engineer needs to update a customer's email address. The application currently accepts any text submitted by the browser. Which approach is most appropriate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Trust the browser because it controls the form"
+        },
+        {
+          "label": "B",
+          "text": "Store everything exactly as received"
+        },
+        {
+          "label": "C",
+          "text": "Validate and sanitize input on the server and enforce appropriate business rules"
+        },
+        {
+          "label": "D",
+          "text": "Disable the database whenever an invalid value is submitted"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Validate and sanitize input on the server and enforce appropriate business rules",
+      "explanation": "The correct answer is C) Validate and sanitize input on the server and enforce appropriate business rules."
+    },
+    {
+      "id": 13,
+      "question": "A company's mobile app has a 70% registration abandonment rate. Before redesigning the entire application, what should the product team do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Replace the development team"
+        },
+        {
+          "label": "B",
+          "text": "Increase advertising expenditure"
+        },
+        {
+          "label": "C",
+          "text": "Add more registration fields"
+        },
+        {
+          "label": "D",
+          "text": "Analyze the funnel and combine behavioral data with usability research to identify where and why users abandon registration"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Analyze the funnel and combine behavioral data with usability research to identify where and why users abandon registration",
+      "explanation": "The correct answer is D) Analyze the funnel and combine behavioral data with usability research to identify where and why users abandon registration."
+    },
+    {
+      "id": 14,
+      "question": "You are asked to create a dashboard showing whether a company's monthly revenue is improving or declining. Which design would communicate the trend most directly?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A line chart showing revenue across the relevant time periods"
+        },
+        {
+          "label": "B",
+          "text": "A 3D pie chart containing every transaction"
+        },
+        {
+          "label": "C",
+          "text": "A dashboard containing only the company's logo"
+        },
+        {
+          "label": "D",
+          "text": "A table with no sorting or filtering"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "A line chart showing revenue across the relevant time periods",
+      "explanation": "The correct answer is A) A line chart showing revenue across the relevant time periods."
+    },
+    {
+      "id": 15,
+      "question": "A company discovers that an employee's password was stolen, but the attacker cannot access the account because MFA is enabled. What does this demonstrate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "MFA makes passwords unnecessary in every situation"
+        },
+        {
+          "label": "B",
+          "text": "MFA can provide an additional authentication barrier even when one credential is compromised"
+        },
+        {
+          "label": "C",
+          "text": "Passwords can safely be shared between employees"
+        },
+        {
+          "label": "D",
+          "text": "Encryption and authentication are the same thing"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "MFA can provide an additional authentication barrier even when one credential is compromised",
+      "explanation": "The correct answer is B) MFA can provide an additional authentication barrier even when one credential is compromised."
+    },
+    {
+      "id": 16,
+      "question": "A website has a button that works with a mouse but cannot be reached using the keyboard. What should the developer consider?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Increasing the server bandwidth"
+        },
+        {
+          "label": "B",
+          "text": "Adding more animations"
+        },
+        {
+          "label": "C",
+          "text": "Improving keyboard accessibility and using appropriate semantic interactive elements"
+        },
+        {
+          "label": "D",
+          "text": "Removing the button completely"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Improving keyboard accessibility and using appropriate semantic interactive elements",
+      "explanation": "The correct answer is C) Improving keyboard accessibility and using appropriate semantic interactive elements."
+    },
+    {
+      "id": 17,
+      "question": "A company has a customer table and an orders table. One customer can place many orders. Which database relationship best represents this situation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Many-to-many"
+        },
+        {
+          "label": "B",
+          "text": "One-to-one"
+        },
+        {
+          "label": "C",
+          "text": "Zero-to-zero"
+        },
+        {
+          "label": "D",
+          "text": "One-to-many"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "One-to-many",
+      "explanation": "The correct answer is D) One-to-many."
+    },
+    {
+      "id": 18,
+      "question": "A server begins receiving an unusually large number of requests from thousands of different IP addresses, causing legitimate users to experience slow performance. What type of security incident could this indicate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Distributed Denial-of-Service attack"
+        },
+        {
+          "label": "B",
+          "text": "Data normalization"
+        },
+        {
+          "label": "C",
+          "text": "Password hashing"
+        },
+        {
+          "label": "D",
+          "text": "UI regression"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Distributed Denial-of-Service attack",
+      "explanation": "The correct answer is A) Distributed Denial-of-Service attack."
+    },
+    {
+      "id": 19,
+      "question": "A data analyst receives a dataset where 35% of the values in the \"income\" column are missing. What should the analyst do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Replace every missing value with zero without investigation"
+        },
+        {
+          "label": "B",
+          "text": "Delete the entire column immediately"
+        },
+        {
+          "label": "C",
+          "text": "Understand why the values are missing and choose an appropriate treatment based on the analysis and data-generating process"
+        },
+        {
+          "label": "D",
+          "text": "Replace every missing value with the maximum income"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Understand why the values are missing and choose an appropriate treatment based on the analysis and data-generating process",
+      "explanation": "The correct answer is C) Understand why the values are missing and choose an appropriate treatment based on the analysis and data-generating process."
+    },
+    {
+      "id": 20,
+      "question": "A frontend application displays old information even after the backend database has been updated. What could be responsible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The user's keyboard"
+        },
+        {
+          "label": "B",
+          "text": "Browser, application, CDN, or server-side caching"
+        },
+        {
+          "label": "C",
+          "text": "The monitor resolution"
+        },
+        {
+          "label": "D",
+          "text": "The HTML <title> element"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Browser, application, CDN, or server-side caching",
+      "explanation": "The correct answer is B) Browser, application, CDN, or server-side caching."
+    },
+    {
+      "id": 21,
+      "question": "A company wants employees to access only the systems required for their particular jobs. Which security approach should be implemented?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Give everyone administrator privileges"
+        },
+        {
+          "label": "B",
+          "text": "Share one account between departments"
+        },
+        {
+          "label": "C",
+          "text": "Disable authentication for internal applications"
+        },
+        {
+          "label": "D",
+          "text": "Apply role-based access and the principle of least privilege"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Apply role-based access and the principle of least privilege",
+      "explanation": "The correct answer is D) Apply role-based access and the principle of least privilege."
+    },
+    {
+      "id": 22,
+      "question": "A developer discovers that an API endpoint accepts user_id=123 and changing the number to 124 allows access to another customer's information. What should the team investigate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Broken access control / IDOR-style authorization failure"
+        },
+        {
+          "label": "B",
+          "text": "CSS specificity"
+        },
+        {
+          "label": "C",
+          "text": "Image compression"
+        },
+        {
+          "label": "D",
+          "text": "DNS caching"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Broken access control / IDOR-style authorization failure",
+      "explanation": "The correct answer is A) Broken access control / IDOR-style authorization failure."
+    },
+    {
+      "id": 23,
+      "question": "A product manager wants to know whether a newly redesigned checkout page actually improves conversion. Which approach would provide stronger evidence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ask the development team whether it looks better"
+        },
+        {
+          "label": "B",
+          "text": "Measure conversion before and after without considering other changes"
+        },
+        {
+          "label": "C",
+          "text": "Run a controlled A/B test with appropriate success metrics and statistical analysis"
+        },
+        {
+          "label": "D",
+          "text": "Choose the version the product manager personally prefers"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Run a controlled A/B test with appropriate success metrics and statistical analysis",
+      "explanation": "The correct answer is C) Run a controlled A/B test with appropriate success metrics and statistical analysis."
+    },
+    {
+      "id": 24,
+      "question": "A company database contains millions of transactions. A query that previously took 200 milliseconds now takes 15 seconds after the table grows significantly. What should the developer investigate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The company's logo"
+        },
+        {
+          "label": "B",
+          "text": "Query execution plans, indexes, data volume, joins, and database configuration"
+        },
+        {
+          "label": "C",
+          "text": "The font used by the application"
+        },
+        {
+          "label": "D",
+          "text": "The keyboard shortcuts used by employees"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Query execution plans, indexes, data volume, joins, and database configuration",
+      "explanation": "The correct answer is B) Query execution plans, indexes, data volume, joins, and database configuration."
+    },
+    {
+      "id": 25,
+      "question": "A UX researcher interviews 10 users and all of them complain about the same checkout step. What should the product team conclude?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The evidence is worth investigating, but the sample should not automatically be treated as representative of every user"
+        },
+        {
+          "label": "B",
+          "text": "Exactly 100% of customers have the same problem"
+        },
+        {
+          "label": "C",
+          "text": "The entire checkout system must immediately be deleted"
+        },
+        {
+          "label": "D",
+          "text": "User interviews are never useful"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "The evidence is worth investigating, but the sample should not automatically be treated as representative of every user",
+      "explanation": "The correct answer is A) The evidence is worth investigating, but the sample should not automatically be treated as representative of every user."
+    },
+    {
+      "id": 26,
+      "question": "A company stores customer passwords using SHA-256 without unique salts. An attacker obtains the password database. What additional concern exists?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The passwords are automatically impossible to attack"
+        },
+        {
+          "label": "B",
+          "text": "The database cannot be copied"
+        },
+        {
+          "label": "C",
+          "text": "The website cannot use HTTPS"
+        },
+        {
+          "label": "D",
+          "text": "Identical passwords produce identical hashes, making precomputed attacks more practical"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Identical passwords produce identical hashes, making precomputed attacks more practical",
+      "explanation": "The correct answer is D) Identical passwords produce identical hashes, making precomputed attacks more practical."
+    },
+    {
+      "id": 27,
+      "question": "A frontend developer notices that a page takes four seconds to become interactive. The JavaScript bundle is several megabytes. Which optimization could help?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Increase the number of JavaScript libraries"
+        },
+        {
+          "label": "B",
+          "text": "Remove semantic HTML"
+        },
+        {
+          "label": "C",
+          "text": "Code splitting, lazy loading, tree shaking, and reducing unnecessary JavaScript"
+        },
+        {
+          "label": "D",
+          "text": "Add larger background images"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Code splitting, lazy loading, tree shaking, and reducing unnecessary JavaScript",
+      "explanation": "The correct answer is C) Code splitting, lazy loading, tree shaking, and reducing unnecessary JavaScript."
+    },
+    {
+      "id": 28,
+      "question": "A company wants its application to continue functioning if one server fails. Which architecture would better support this requirement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A single server with no backup"
+        },
+        {
+          "label": "B",
+          "text": "Multiple instances with appropriate redundancy and health monitoring"
+        },
+        {
+          "label": "C",
+          "text": "One computer running every service"
+        },
+        {
+          "label": "D",
+          "text": "A local spreadsheet"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Multiple instances with appropriate redundancy and health monitoring",
+      "explanation": "The correct answer is B) Multiple instances with appropriate redundancy and health monitoring."
+    },
+    {
+      "id": 29,
+      "question": "An analyst reports that average customer spending increased from â‚¦20,000 to â‚¦30,000. Management celebrates immediately. Before accepting the conclusion, what should be checked?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Whether the change is driven by outliers, customer mix, pricing changes, transaction volume, or data-quality issues"
+        },
+        {
+          "label": "B",
+          "text": "Whether the chart uses a blue background"
+        },
+        {
+          "label": "C",
+          "text": "Whether employees prefer the new dashboard"
+        },
+        {
+          "label": "D",
+          "text": "Whether the company's website has a dark mode"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Whether the change is driven by outliers, customer mix, pricing changes, transaction volume, or data-quality issues",
+      "explanation": "The correct answer is A) Whether the change is driven by outliers, customer mix, pricing changes, transaction volume, or data-quality issues."
+    },
+    {
+      "id": 30,
+      "question": "A user reports that clicking \"Pay Now\" sometimes charges their card twice. The backend team needs to prevent duplicate processing when the same request is submitted more than once. What concept is particularly relevant?",
+      "options": [
+        {
+          "label": "A",
+          "text": "CSS inheritance"
+        },
+        {
+          "label": "B",
+          "text": "Idempotency"
+        },
+        {
+          "label": "C",
+          "text": "Color theory"
+        },
+        {
+          "label": "D",
+          "text": "DNS resolution"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Idempotency",
+      "explanation": "The correct answer is B) Idempotency."
+    },
+    {
+      "id": 31,
+      "question": "A cybersecurity team discovers malware on one employee's laptop. What is generally an appropriate immediate response?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Disconnect or isolate the affected system according to the incident-response plan while preserving relevant evidence"
+        },
+        {
+          "label": "B",
+          "text": "Send the malware to other employees for comparison"
+        },
+        {
+          "label": "C",
+          "text": "Continue using the laptop normally"
+        },
+        {
+          "label": "D",
+          "text": "Delete all company logs"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Disconnect or isolate the affected system according to the incident-response plan while preserving relevant evidence",
+      "explanation": "The correct answer is A) Disconnect or isolate the affected system according to the incident-response plan while preserving relevant evidence."
+    },
+    {
+      "id": 32,
+      "question": "A designer wants to know whether users can complete a task successfully without assistance. Which metric would be particularly useful?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Number of colors in the interface"
+        },
+        {
+          "label": "B",
+          "text": "Number of employees in the company"
+        },
+        {
+          "label": "C",
+          "text": "Task completion rate"
+        },
+        {
+          "label": "D",
+          "text": "Database storage capacity"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Task completion rate",
+      "explanation": "The correct answer is C) Task completion rate."
+    },
+    {
+      "id": 33,
+      "question": "A company wants to predict which customers are likely to cancel their subscriptions next month. What type of analytical approach is most appropriate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Predictive analysis using relevant historical customer data"
+        },
+        {
+          "label": "B",
+          "text": "Descriptive reporting only"
+        },
+        {
+          "label": "C",
+          "text": "Manual sorting of customer names"
+        },
+        {
+          "label": "D",
+          "text": "Image editing"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Predictive analysis using relevant historical customer data",
+      "explanation": "The correct answer is A) Predictive analysis using relevant historical customer data."
+    },
+    {
+      "id": 34,
+      "question": "A web developer notices that a form submits successfully even when required fields are empty because the validation exists only in JavaScript. What is the major concern?",
+      "options": [
+        {
+          "label": "A",
+          "text": "JavaScript validation improves server security automatically"
+        },
+        {
+          "label": "B",
+          "text": "Users cannot manipulate browser-side code"
+        },
+        {
+          "label": "C",
+          "text": "Client-side validation should replace server-side validation"
+        },
+        {
+          "label": "D",
+          "text": "Server-side validation is still required because client-side controls can be bypassed"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Server-side validation is still required because client-side controls can be bypassed",
+      "explanation": "The correct answer is D) Server-side validation is still required because client-side controls can be bypassed."
+    },
+    {
+      "id": 35,
+      "question": "A company wants employees to access its internal application remotely without exposing the application directly to the public internet. Which solution could help?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A VPN or appropriately secured private network access solution"
+        },
+        {
+          "label": "B",
+          "text": "A larger monitor"
+        },
+        {
+          "label": "C",
+          "text": "A public social media account"
+        },
+        {
+          "label": "D",
+          "text": "A spreadsheet password"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "A VPN or appropriately secured private network access solution",
+      "explanation": "The correct answer is A) A VPN or appropriately secured private network access solution."
+    },
+    {
+      "id": 36,
+      "question": "A mobile application has excellent visual design but users consistently fail to complete important tasks. What does this suggest?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Visual attractiveness automatically guarantees usability"
+        },
+        {
+          "label": "B",
+          "text": "The application may have usability or interaction problems despite its visual appearance"
+        },
+        {
+          "label": "C",
+          "text": "The database must be corrupted"
+        },
+        {
+          "label": "D",
+          "text": "The application's logo needs to be larger"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "The application may have usability or interaction problems despite its visual appearance",
+      "explanation": "The correct answer is B) The application may have usability or interaction problems despite its visual appearance."
+    },
+    {
+      "id": 37,
+      "question": "A data analyst discovers that two departments use \"Nigeria\", \"NG\", \"NGA\", and \"Nigerian\" to represent the same country. What should the analyst consider?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Treat each value as a completely different country"
+        },
+        {
+          "label": "B",
+          "text": "Delete the country column"
+        },
+        {
+          "label": "C",
+          "text": "Standardizing categories during data cleaning using a defined mapping"
+        },
+        {
+          "label": "D",
+          "text": "Convert all values into random numbers"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Standardizing categories during data cleaning using a defined mapping",
+      "explanation": "The correct answer is C) Standardizing categories during data cleaning using a defined mapping."
+    },
+    {
+      "id": 38,
+      "question": "A company's API is being abused because there is no restriction on how many requests a single client can make. Which control could reduce this risk?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rate limiting"
+        },
+        {
+          "label": "B",
+          "text": "Larger images"
+        },
+        {
+          "label": "C",
+          "text": "Additional CSS files"
+        },
+        {
+          "label": "D",
+          "text": "Removing database indexes"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Rate limiting",
+      "explanation": "The correct answer is A) Rate limiting."
+    },
+    {
+      "id": 39,
+      "question": "A UX team wants to understand why users leave an application without completing a task. Which combination could provide stronger insight?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only changing the logo"
+        },
+        {
+          "label": "B",
+          "text": "Analytics/funnel data combined with usability testing and user research"
+        },
+        {
+          "label": "C",
+          "text": "Increasing server storage"
+        },
+        {
+          "label": "D",
+          "text": "Asking developers to guess the reason"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Analytics/funnel data combined with usability testing and user research",
+      "explanation": "The correct answer is B) Analytics/funnel data combined with usability testing and user research."
+    },
+    {
+      "id": 40,
+      "question": "A backend application needs to process a task that takes several minutes, but users should not have to keep the HTTP connection open while it runs. What architecture could be appropriate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Make the browser wait indefinitely"
+        },
+        {
+          "label": "B",
+          "text": "Queue the job for asynchronous/background processing and provide an appropriate status mechanism"
+        },
+        {
+          "label": "C",
+          "text": "Increase the button size"
+        },
+        {
+          "label": "D",
+          "text": "Convert the database into an image"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Queue the job for asynchronous/background processing and provide an appropriate status mechanism",
+      "explanation": "The correct answer is B) Queue the job for asynchronous/background processing and provide an appropriate status mechanism."
+    },
+    {
+      "id": 41,
+      "question": "A security analyst receives an alert that an administrator account has suddenly downloaded several gigabytes of sensitive files at 3:00 AM. What should the analyst do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assume it is normal because the account is an administrator"
+        },
+        {
+          "label": "B",
+          "text": "Delete the security logs"
+        },
+        {
+          "label": "C",
+          "text": "Investigate the activity against expected behavior, verify authorization, and follow the incident-response process if suspicious"
+        },
+        {
+          "label": "D",
+          "text": "Disable every account in the organization permanently"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Investigate the activity against expected behavior, verify authorization, and follow the incident-response process if suspicious",
+      "explanation": "The correct answer is C) Investigate the activity against expected behavior, verify authorization, and follow the incident-response process if suspicious."
+    },
+    {
+      "id": 42,
+      "question": "A website uses red text to indicate an error and green text to indicate success. A user with certain color-vision limitations cannot distinguish them. What should the designer do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Remove all error messages"
+        },
+        {
+          "label": "B",
+          "text": "Use color as the only indicator"
+        },
+        {
+          "label": "C",
+          "text": "Make the colors brighter"
+        },
+        {
+          "label": "D",
+          "text": "Add additional cues such as icons, text, patterns, or status labels"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Add additional cues such as icons, text, patterns, or status labels",
+      "explanation": "The correct answer is D) Add additional cues such as icons, text, patterns, or status labels."
+    },
+    {
+      "id": 43,
+      "question": "A company has 10 years of historical sales data and wants to forecast next year's demand. Before selecting a model, what should the analyst consider?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Data quality, seasonality, trends, relevant variables, historical changes, and the forecasting objective"
+        },
+        {
+          "label": "B",
+          "text": "Only the highest sales value"
+        },
+        {
+          "label": "C",
+          "text": "The company's brand colors"
+        },
+        {
+          "label": "D",
+          "text": "Whether the analyst prefers Excel or Python"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Data quality, seasonality, trends, relevant variables, historical changes, and the forecasting objective",
+      "explanation": "The correct answer is A) Data quality, seasonality, trends, relevant variables, historical changes, and the forecasting objective."
+    },
+    {
+      "id": 44,
+      "question": "An application uses SQL queries built by directly concatenating user input into the query string. Why is this dangerous?",
+      "options": [
+        {
+          "label": "A",
+          "text": "It makes CSS slower"
+        },
+        {
+          "label": "B",
+          "text": "It can create SQL injection vulnerabilities"
+        },
+        {
+          "label": "C",
+          "text": "It prevents users from changing their passwords"
+        },
+        {
+          "label": "D",
+          "text": "It automatically deletes database indexes"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "It can create SQL injection vulnerabilities",
+      "explanation": "The correct answer is B) It can create SQL injection vulnerabilities."
+    },
+    {
+      "id": 45,
+      "question": "A developer changes a feature and several unrelated parts of the application suddenly stop working. Which development practice could have helped detect this earlier?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Removing automated tests"
+        },
+        {
+          "label": "B",
+          "text": "Avoiding version control"
+        },
+        {
+          "label": "C",
+          "text": "Automated regression testing"
+        },
+        {
+          "label": "D",
+          "text": "Making all code changes directly in production"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Automated regression testing",
+      "explanation": "The correct answer is C) Automated regression testing."
+    },
+    {
+      "id": 46,
+      "question": "A product team wants to determine which features users consider most important before investing engineering resources. Which approach is most useful?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Build every feature immediately"
+        },
+        {
+          "label": "B",
+          "text": "Combine user research, behavioral evidence, business objectives, and prioritization methods"
+        },
+        {
+          "label": "C",
+          "text": "Select features based only on the CEO's personal preference"
+        },
+        {
+          "label": "D",
+          "text": "Choose the features requiring the most code"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Combine user research, behavioral evidence, business objectives, and prioritization methods",
+      "explanation": "The correct answer is B) Combine user research, behavioral evidence, business objectives, and prioritization methods."
+    },
+    {
+      "id": 47,
+      "question": "A company's website receives a sudden traffic spike after appearing in a major news publication. The application remains online but response times increase dramatically. Which solution could help?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Add more decorative animations"
+        },
+        {
+          "label": "B",
+          "text": "Increase the number of website colors"
+        },
+        {
+          "label": "C",
+          "text": "Remove all monitoring"
+        },
+        {
+          "label": "D",
+          "text": "Use scalable infrastructure, caching, load balancing, and optimized backend resources"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Use scalable infrastructure, caching, load balancing, and optimized backend resources",
+      "explanation": "The correct answer is D) Use scalable infrastructure, caching, load balancing, and optimized backend resources."
+    },
+    {
+      "id": 48,
+      "question": "A data analyst creates a dashboard containing 25 different charts because management requested \"as much information as possible.\" Users find it difficult to identify important metrics. What is the underlying problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The dashboard may suffer from information overload and poor prioritization"
+        },
+        {
+          "label": "B",
+          "text": "The dashboard does not contain enough colors"
+        },
+        {
+          "label": "C",
+          "text": "The database needs more columns"
+        },
+        {
+          "label": "D",
+          "text": "More charts should always be added"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "The dashboard may suffer from information overload and poor prioritization",
+      "explanation": "The correct answer is A) The dashboard may suffer from information overload and poor prioritization."
+    },
+    {
+      "id": 49,
+      "question": "An employee receives a phone call from someone claiming to be the company's IT administrator. The caller asks for the employee's MFA code to \"fix a security problem.\" What should the employee do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Provide the code because the caller knows the employee's name"
+        },
+        {
+          "label": "B",
+          "text": "Read the code slowly so the caller can verify it"
+        },
+        {
+          "label": "C",
+          "text": "Refuse to share the code and independently verify the request through an official channel"
+        },
+        {
+          "label": "D",
+          "text": "Send the code by email instead"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Refuse to share the code and independently verify the request through an official channel",
+      "explanation": "The correct answer is C) Refuse to share the code and independently verify the request through an official channel."
+    },
+    {
+      "id": 50,
+      "question": "A developer notices that an API returns sensitive customer information even when the requesting user does not need it. What is a good security and privacy practice?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Return every available field in every response"
+        },
+        {
+          "label": "B",
+          "text": "Minimize exposed data and enforce authorization for sensitive fields and resources"
+        },
+        {
+          "label": "C",
+          "text": "Encode the response in Base64 and consider it secure"
+        },
+        {
+          "label": "D",
+          "text": "Hide the API documentation"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Minimize exposed data and enforce authorization for sensitive fields and resources",
+      "explanation": "The correct answer is B) Minimize exposed data and enforce authorization for sensitive fields and resources."
+    },
+    {
+      "id": 51,
+      "question": "A company wants to move its application to the cloud. The CTO asks whether moving to the cloud automatically guarantees lower costs. What is the most accurate response?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cloud computing is always cheaper"
+        },
+        {
+          "label": "B",
+          "text": "Cloud computing is always more expensive"
+        },
+        {
+          "label": "C",
+          "text": "Cost depends on architecture, workload, utilization, pricing model, operations, and optimization"
+        },
+        {
+          "label": "D",
+          "text": "Cloud providers do not charge for storage"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Cost depends on architecture, workload, utilization, pricing model, operations, and optimization",
+      "explanation": "The correct answer is C) Cost depends on architecture, workload, utilization, pricing model, operations, and optimization."
+    },
+    {
+      "id": 52,
+      "question": "A user complains that an application \"feels slow,\" but server monitoring shows the backend responds in 100 milliseconds. What else should the team investigate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only the database password"
+        },
+        {
+          "label": "B",
+          "text": "Frontend rendering, JavaScript execution, network requests, assets, device performance, and perceived performance"
+        },
+        {
+          "label": "C",
+          "text": "The company's accounting records"
+        },
+        {
+          "label": "D",
+          "text": "The number of office chairs"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Frontend rendering, JavaScript execution, network requests, assets, device performance, and perceived performance",
+      "explanation": "The correct answer is B) Frontend rendering, JavaScript execution, network requests, assets, device performance, and perceived performance."
+    },
+    {
+      "id": 53,
+      "question": "A company wants to give a machine-learning model access to customer data. Before doing so, what should the team consider?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Data privacy, security, authorization, purpose, data quality, retention, and applicable requirements"
+        },
+        {
+          "label": "B",
+          "text": "Only how colorful the model's dashboard is"
+        },
+        {
+          "label": "C",
+          "text": "Whether the model has the longest name"
+        },
+        {
+          "label": "D",
+          "text": "Whether all customer data can simply be uploaded publicly"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Data privacy, security, authorization, purpose, data quality, retention, and applicable requirements",
+      "explanation": "The correct answer is A) Data privacy, security, authorization, purpose, data quality, retention, and applicable requirements."
+    },
+    {
+      "id": 54,
+      "question": "A developer discovers that an application works correctly on their machine but fails when deployed to production because of different environment variables and dependencies. What engineering practice can reduce this type of problem?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Manually changing production files after every deployment"
+        },
+        {
+          "label": "B",
+          "text": "Keeping development and production completely undocumented"
+        },
+        {
+          "label": "C",
+          "text": "Reproducible environments, dependency management, configuration management, and automated deployment processes"
+        },
+        {
+          "label": "D",
+          "text": "Asking users to install the developer's computer configuration"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Reproducible environments, dependency management, configuration management, and automated deployment processes",
+      "explanation": "The correct answer is C) Reproducible environments, dependency management, configuration management, and automated deployment processes."
+    },
+    {
+      "id": 55,
+      "question": "A company wants to identify the stage in its sales funnel where potential customers are being lost. Which analysis would be most appropriate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Funnel analysis"
+        },
+        {
+          "label": "B",
+          "text": "Image compression"
+        },
+        {
+          "label": "C",
+          "text": "Network scanning"
+        },
+        {
+          "label": "D",
+          "text": "Color analysis"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Funnel analysis",
+      "explanation": "The correct answer is A) Funnel analysis."
+    },
+    {
+      "id": 56,
+      "question": "During a security review, an application allows users to upload files. Attackers could potentially upload executable content that the server then runs. What should the development team prioritize?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Making the upload button larger"
+        },
+        {
+          "label": "B",
+          "text": "Secure file-upload controls, validation, storage isolation, access restrictions, and preventing execution of uploaded content"
+        },
+        {
+          "label": "C",
+          "text": "Allowing every file type without restrictions"
+        },
+        {
+          "label": "D",
+          "text": "Renaming every uploaded file to \"safe\""
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Secure file-upload controls, validation, storage isolation, access restrictions, and preventing execution of uploaded content",
+      "explanation": "The correct answer is B) Secure file-upload controls, validation, storage isolation, access restrictions, and preventing execution of uploaded content."
+    },
+    {
+      "id": 57,
+      "question": "A UX designer proposes removing a frequently used feature because only 5% of users use it. The product manager objects because those users generate a large percentage of the company's revenue. What should happen next?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Remove the feature because 5% is always insignificant"
+        },
+        {
+          "label": "B",
+          "text": "Keep it solely because the designer dislikes removing features"
+        },
+        {
+          "label": "C",
+          "text": "Evaluate usage alongside customer value, revenue impact, user segments, and strategic importance"
+        },
+        {
+          "label": "D",
+          "text": "Ignore all available data"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Evaluate usage alongside customer value, revenue impact, user segments, and strategic importance",
+      "explanation": "The correct answer is C) Evaluate usage alongside customer value, revenue impact, user segments, and strategic importance."
+    },
+    {
+      "id": 58,
+      "question": "A company discovers that an application stores API keys directly inside frontend JavaScript code. What is the primary concern?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Users can potentially inspect the frontend code and obtain credentials that should have remained secret"
+        },
+        {
+          "label": "B",
+          "text": "JavaScript cannot communicate with an API"
+        },
+        {
+          "label": "C",
+          "text": "API keys always make websites slower"
+        },
+        {
+          "label": "D",
+          "text": "Frontend code cannot contain variables"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Users can potentially inspect the frontend code and obtain credentials that should have remained secret",
+      "explanation": "The correct answer is A) Users can potentially inspect the frontend code and obtain credentials that should have remained secret."
+    },
+    {
+      "id": 59,
+      "question": "A product team releases a new feature and sees that usage is high, but customer complaints and support requests also increase significantly. What should the team do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Declare the feature successful solely because usage is high"
+        },
+        {
+          "label": "B",
+          "text": "Remove the feature immediately without investigation"
+        },
+        {
+          "label": "C",
+          "text": "Ignore customer complaints"
+        },
+        {
+          "label": "D",
+          "text": "Analyze usage, support feedback, task success, errors, retention, and other relevant outcomes before deciding what to change"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Analyze usage, support feedback, task success, errors, retention, and other relevant outcomes before deciding what to change",
+      "explanation": "The correct answer is D) Analyze usage, support feedback, task success, errors, retention, and other relevant outcomes before deciding what to change."
+    },
+    {
+      "id": 60,
+      "question": "A company discovers that customers are abandoning its mobile application during registration. Analytics shows a large drop-off at the phone-number verification stage. Users complain that verification codes sometimes arrive late, while usability testing shows that some users do not understand what to do after requesting the code.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ask only the graphic designer to change the registration colors"
+        },
+        {
+          "label": "B",
+          "text": "Increase advertising to compensate for lost registrations"
+        },
+        {
+          "label": "C",
+          "text": "Combine data analysis, UX research/design, frontend investigation, backend/API investigation, and product management to identify both behavioral and technical causes"
+        },
+        {
+          "label": "D",
+          "text": "Replace the entire application without investigating the evidence"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Combine data analysis, UX research/design, frontend investigation, backend/API investigation, and product management to identify both behavioral and technical causes",
+      "explanation": "The correct answer is C) Combine data analysis, UX research/design, frontend investigation, backend/API investigation, and product management to identify both behavioral and technical causes."
+    }
+  ],
+  "Product Management Quiz": [
+    {
+      "id": 1,
+      "question": "A React page you built takes over 5 seconds to load, and users are complaining. What should you do FIRST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Immediately introduce code splitting and lazy loading"
+        },
+        {
+          "label": "B",
+          "text": "Use Lighthouse and DevTools to locate the performance bottleneck"
+        },
+        {
+          "label": "C",
+          "text": "Convert all images to WebP format"
+        },
+        {
+          "label": "D",
+          "text": "Upgrade the server configuration"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Use Lighthouse and DevTools to locate the performance bottleneck",
+      "explanation": "Performance optimization always starts with measure first. Find the bottleneck before you fix it."
+    },
+    {
+      "id": 2,
+      "question": "A designer gives you an interaction, but the engineering team says it cannot be built this quarter. As a frontend developer, what's the most reasonable approach?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tell the designer it cannot be done"
+        },
+        {
+          "label": "B",
+          "text": "Escalate to the project manager to pressure the team"
+        },
+        {
+          "label": "C",
+          "text": "Ask about the specific technical constraints, then find an alternative together"
+        },
+        {
+          "label": "D",
+          "text": "Build it anyway and deal with it after launch"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Ask about the specific technical constraints, then find an alternative together",
+      "explanation": "Great frontend developers protect the user experience while negotiating feasible alternatives with engineering."
+    },
+    {
+      "id": 3,
+      "question": "You find a serious display bug in production, but fixing it requires refactoring a core component. What should you do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Refactor everything immediately - no half measures"
+        },
+        {
+          "label": "B",
+          "text": "Apply a minimal hotfix to stop the bleeding, then plan the refactor"
+        },
+        {
+          "label": "C",
+          "text": "Wait and fix it in the next major release"
+        },
+        {
+          "label": "D",
+          "text": "Only fix it for the devices users complained about"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Apply a minimal hotfix to stop the bleeding, then plan the refactor",
+      "explanation": "Production issues need containment first. Refactoring should happen gradually with proper test coverage."
+    },
+    {
+      "id": 4,
+      "question": "Your React app lags badly on low-end Android phones but runs smoothly on high-end devices. What is the MOST likely cause?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There is a memory leak in the code"
+        },
+        {
+          "label": "B",
+          "text": "Components are re-rendering too frequently"
+        },
+        {
+          "label": "C",
+          "text": "The API responses are too slow"
+        },
+        {
+          "label": "D",
+          "text": "There are too many CSS animations"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Components are re-rendering too frequently",
+      "explanation": "Low-end devices have limited processing power, so unnecessary re-renders get amplified. This is a classic React performance symptom."
+    },
+    {
+      "id": 5,
+      "question": "You want to add real-time validation to a form. Validating on every keystroke causes lag. How should you solve this?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Move the validation logic to a Web Worker"
+        },
+        {
+          "label": "B",
+          "text": "Use debounce or throttle"
+        },
+        {
+          "label": "C",
+          "text": "Switch to validating only on submit"
+        },
+        {
+          "label": "D",
+          "text": "Reduce the number of validation rules"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Use debounce or throttle",
+      "explanation": "Debounce and throttle are the standard solutions for high-frequency events, balancing UX and performance."
+    },
+    {
+      "id": 6,
+      "question": "A payment endpoint might be called twice when a user network is unstable. How do you prevent double-charging?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Disable the button on the frontend to prevent double clicks"
+        },
+        {
+          "label": "B",
+          "text": "Use an Idempotency Key so the backend recognizes duplicate requests"
+        },
+        {
+          "label": "C",
+          "text": "Just add a unique index to the database"
+        },
+        {
+          "label": "D",
+          "text": "Require users to manually confirm every transaction"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Use an Idempotency Key so the backend recognizes duplicate requests",
+      "explanation": "Frontend button disabling is unreliable - network retries still happen. Idempotency keys are the core mechanism for preventing duplicate payments."
+    },
+    {
+      "id": 7,
+      "question": "Your API response time suddenly jumps from 200ms to 3 seconds. Logs show database queries are normal. What should you check NEXT?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Immediately add Redis caching"
+        },
+        {
+          "label": "B",
+          "text": "Check for N+1 queries or external dependency timeouts in the application layer"
+        },
+        {
+          "label": "C",
+          "text": "Upgrade the database server"
+        },
+        {
+          "label": "D",
+          "text": "Restart all services"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Check for N+1 queries or external dependency timeouts in the application layer",
+      "explanation": "Do not add caching or upgrade hardware without evidence. N+1 queries and external dependencies are common hidden bottlenecks."
+    },
+    {
+      "id": 8,
+      "question": "Your team is choosing a database for a SaaS app. A teammate says to use MongoDB because everyone knows JavaScript. What should you do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Agree - a unified tech stack improves development speed"
+        },
+        {
+          "label": "B",
+          "text": "Analyze data relationships, query patterns, and consistency needs before deciding"
+        },
+        {
+          "label": "C",
+          "text": "Choose MySQL because it is more mature"
+        },
+        {
+          "label": "D",
+          "text": "Use both and split by feature"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Analyze data relationships, query patterns, and consistency needs before deciding",
+      "explanation": "Database selection should be based on data characteristics and access patterns, not the team language preference."
+    },
+    {
+      "id": 9,
+      "question": "After launch, you get an alert: database CPU is at 100%. Which is the LEAST likely cause?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Missing necessary indexes"
+        },
+        {
+          "label": "B",
+          "text": "Slow queries or full table scans"
+        },
+        {
+          "label": "C",
+          "text": "Insufficient server disk space"
+        },
+        {
+          "label": "D",
+          "text": "Connection pool exhaustion causing query buildup"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Insufficient server disk space",
+      "explanation": "Insufficient disk space causes write failures but does not directly max out CPU. Missing indexes, slow queries, and connection pool exhaustion are all common causes of CPU spikes."
+    },
+    {
+      "id": 10,
+      "question": "A feature works locally but throws errors in production. What should you check FIRST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rewrite the code - it is probably a logic issue"
+        },
+        {
+          "label": "B",
+          "text": "Compare environment variables, dependency versions, and file path differences"
+        },
+        {
+          "label": "C",
+          "text": "Restart the production server"
+        },
+        {
+          "label": "D",
+          "text": "Roll back to the previous version"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Compare environment variables, dependency versions, and file path differences",
+      "explanation": "Works locally but fails in production is classically caused by environment differences. Compare configurations before rewriting code."
+    },
+    {
+      "id": 11,
+      "question": "A product manager asks you to add a 6-step onboarding flow because activation rates dropped. What should you do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Do it - the PM understands the business better"
+        },
+        {
+          "label": "B",
+          "text": "Analyze the activation funnel data first to confirm where users are actually dropping off"
+        },
+        {
+          "label": "C",
+          "text": "Build a prettier onboarding flow"
+        },
+        {
+          "label": "D",
+          "text": "Refuse - onboarding flows usually do not work"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Analyze the activation funnel data first to confirm where users are actually dropping off",
+      "explanation": "Do not accept the proposed solution without validating the problem. Find out what is actually causing the activation drop first."
+    },
+    {
+      "id": 12,
+      "question": "You designed an interface you are proud of, but user testing shows nobody can complete the task. What do you do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stick with your design - users just do not know how to use it"
+        },
+        {
+          "label": "B",
+          "text": "Redesign it, but feel bitter about it"
+        },
+        {
+          "label": "C",
+          "text": "Study the test recordings to understand what users actually misunderstood"
+        },
+        {
+          "label": "D",
+          "text": "Blame the test environment for being unrealistic"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Study the test recordings to understand what users actually misunderstood",
+      "explanation": "Design quality is not determined by the designer preferences. Extract insights from failure instead of defending your ego."
+    },
+    {
+      "id": 13,
+      "question": "Engineering tells you a certain interaction requires a major rewrite to implement. What should you focus on MOST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "What the user core need is, and whether another approach can satisfy it"
+        },
+        {
+          "label": "B",
+          "text": "Convincing engineering to work overtime"
+        },
+        {
+          "label": "C",
+          "text": "Escalating to the design director"
+        },
+        {
+          "label": "D",
+          "text": "Cutting the interaction - simpler is always better"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "What the user core need is, and whether another approach can satisfy it",
+      "explanation": "Separate the user need from a specific implementation. If the core need is unchanged, the implementation can be flexible."
+    },
+    {
+      "id": 14,
+      "question": "You are designing a health app for elderly users. Which design decision matters MOST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using vibrant gradients and dynamic illustrations"
+        },
+        {
+          "label": "B",
+          "text": "Increasing font sizes and touch targets, reducing steps"
+        },
+        {
+          "label": "C",
+          "text": "Adding more animated feedback"
+        },
+        {
+          "label": "D",
+          "text": "Using the latest design trends"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Increasing font sizes and touch targets, reducing steps",
+      "explanation": "The target users physical abilities dictate the foundational design constraints, not visual trends."
+    },
+    {
+      "id": 15,
+      "question": "Leadership says a competitor has a certain feature and suggests adding it too. What is your most reasonable response?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Start designing immediately"
+        },
+        {
+          "label": "B",
+          "text": "First understand how the competitor users and your users differ in usage scenarios"
+        },
+        {
+          "label": "C",
+          "text": "Add it, but make it look better"
+        },
+        {
+          "label": "D",
+          "text": "Tell leadership the feature is useless for users"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "First understand how the competitor users and your users differ in usage scenarios",
+      "explanation": "Competitive research is about understanding conventions, not copying. Different user scenarios demand different design decisions."
+    },
+    {
+      "id": 16,
+      "question": "Your company wants to onboard a new SaaS vendor to handle customer data. When reviewing their security documentation, what should you verify FIRST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Where their office is located"
+        },
+        {
+          "label": "B",
+          "text": "Their SOC 2 Type II report and ISO 27001 certification"
+        },
+        {
+          "label": "C",
+          "text": "Whether their pricing is cheap"
+        },
+        {
+          "label": "D",
+          "text": "Whether their website design looks good"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Their SOC 2 Type II report and ISO 27001 certification",
+      "explanation": "Third-party risk management starts with verifying compliance certifications and security practices - not price or appearance."
+    },
+    {
+      "id": 17,
+      "question": "The dev team wants to use a popular open-source logging library. What should you NOT overlook when assessing risk?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Whether the license is compatible"
+        },
+        {
+          "label": "B",
+          "text": "Scanning for known vulnerabilities with SCA tools"
+        },
+        {
+          "label": "C",
+          "text": "How many GitHub stars the library has"
+        },
+        {
+          "label": "D",
+          "text": "The library maintenance activity and update frequency"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "How many GitHub stars the library has",
+      "explanation": "GitHub stars do not indicate security. License compatibility, known vulnerabilities, and maintenance activity are the real risk factors."
+    },
+    {
+      "id": 18,
+      "question": "Someone claiming to be an IT technician calls the front desk, says they are locked out of the server room, and asks for the access code. What should the front desk do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Give the code - they sound professional"
+        },
+        {
+          "label": "B",
+          "text": "Refuse, and call back on a known internal number to verify their identity"
+        },
+        {
+          "label": "C",
+          "text": "Ask the technician to send an email proving their identity"
+        },
+        {
+          "label": "D",
+          "text": "Give a temporary code and tell them to change it after entering"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Refuse, and call back on a known internal number to verify their identity",
+      "explanation": "This is a classic social engineering attack. Never give out access codes over the phone. Always verify identity through an independent channel."
+    },
+    {
+      "id": 19,
+      "question": "You are reviewing the security of a REST API. Which of the following is LEAST likely to be a common vulnerability you would test for?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Broken Object Level Authorization"
+        },
+        {
+          "label": "B",
+          "text": "Injection attacks such as SQL injection"
+        },
+        {
+          "label": "C",
+          "text": "The readability of the API documentation"
+        },
+        {
+          "label": "D",
+          "text": "Missing rate limiting"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "The readability of the API documentation",
+      "explanation": "API documentation readability is a developer experience issue, not a security vulnerability. Broken authorization, injection attacks, and missing rate limiting are all common risks in the OWASP API Security Top 10."
+    },
+    {
+      "id": 20,
+      "question": "You notice a user account logged in from two locations that are physically impossible to reach at the same time. What is the most reasonable conclusion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The user might be using a VPN"
+        },
+        {
+          "label": "B",
+          "text": "The account credentials may be compromised - investigate the login IPs and session info immediately"
+        },
+        {
+          "label": "C",
+          "text": "The system clock might be wrong"
+        },
+        {
+          "label": "D",
+          "text": "The user might have shared their account with a friend"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "The account credentials may be compromised - investigate the login IPs and session info immediately",
+      "explanation": "Physically impossible concurrent logins are a strong signal of account compromise. Immediate forensic investigation is required."
+    },
+    {
+      "id": 21,
+      "question": "Sales dropped 20% last month. What should be your FIRST step in analysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tell your boss sales are declining"
+        },
+        {
+          "label": "B",
+          "text": "Break down the data by region, product category, and customer segment to find patterns"
+        },
+        {
+          "label": "C",
+          "text": "Check what competitors are doing"
+        },
+        {
+          "label": "D",
+          "text": "Wait for this month data before acting"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Break down the data by region, product category, and customer segment to find patterns",
+      "explanation": "An overall decline is just a signal. You must break it down across dimensions to locate the root cause."
+    },
+    {
+      "id": 22,
+      "question": "You inherit a dataset and find many missing values. What should you NOT do first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Delete all rows containing missing values"
+        },
+        {
+          "label": "B",
+          "text": "Assess the proportion and pattern of missingness first"
+        },
+        {
+          "label": "C",
+          "text": "Determine whether the missingness is random or systematic"
+        },
+        {
+          "label": "D",
+          "text": "Confirm with the business what the missing values represent"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Delete all rows containing missing values",
+      "explanation": "Deleting immediately can lose important information and mask problems in the data collection process. Understand before you handle."
+    },
+    {
+      "id": 23,
+      "question": "You need to explain a complex analysis result to a non-technical executive. What is the best approach?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Present the full statistical model output"
+        },
+        {
+          "label": "B",
+          "text": "Summarize in one sentence what this means and what to do next"
+        },
+        {
+          "label": "C",
+          "text": "Give only the conclusion without evidence"
+        },
+        {
+          "label": "D",
+          "text": "Let them look at the data themselves"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Summarize in one sentence what this means and what to do next",
+      "explanation": "Data storytelling centers on the So What and Now What, not statistical details."
+    },
+    {
+      "id": 24,
+      "question": "A dashboard loads very slowly. Which is the LEAST likely cause and solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Inefficient queries - optimize the SQL"
+        },
+        {
+          "label": "B",
+          "text": "Poor data model design - restructure the model"
+        },
+        {
+          "label": "C",
+          "text": "Unattractive color scheme - adjust the palette"
+        },
+        {
+          "label": "D",
+          "text": "Too many visual elements - simplify the dashboard"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Unattractive color scheme - adjust the palette",
+      "explanation": "Colors are not a performance bottleneck. Inefficient queries, poor data model design, and too many visual elements are all common directions for dashboard performance optimization."
+    },
+    {
+      "id": 25,
+      "question": "A business stakeholder asks you to look at the data and find something interesting. What should you do first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Build every possible chart"
+        },
+        {
+          "label": "B",
+          "text": "Ask first: What is the business goal? What decision are we supporting?"
+        },
+        {
+          "label": "C",
+          "text": "Run a statistical summary of every column"
+        },
+        {
+          "label": "D",
+          "text": "Pick the most complex model and run it"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Ask first: What is the business goal? What decision are we supporting?",
+      "explanation": "Analysis without a business question is blind exploration. Align on the goal before deciding the analysis path."
+    },
+    {
+      "id": 26,
+      "question": "You are setting up Google Analytics for a new website. What should you do FIRST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Install the GA tracking code immediately"
+        },
+        {
+          "label": "B",
+          "text": "Define business objectives first: What are we measuring as success?"
+        },
+        {
+          "label": "C",
+          "text": "Create as many audience segments as possible"
+        },
+        {
+          "label": "D",
+          "text": "Set up every event you possibly can"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Define business objectives first: What are we measuring as success?",
+      "explanation": "If you do not know what success looks like, you cannot know what to track. Business objectives come first."
+    },
+    {
+      "id": 27,
+      "question": "Leadership asks you to increase brand awareness. What should you determine FIRST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Which social platform to use"
+        },
+        {
+          "label": "B",
+          "text": "What the budget is"
+        },
+        {
+          "label": "C",
+          "text": "How increased awareness will be measured as success"
+        },
+        {
+          "label": "D",
+          "text": "What competitors are doing"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "How increased awareness will be measured as success",
+      "explanation": "Increase awareness is not an actionable metric. It must be translated into a measurable KPI first."
+    },
+    {
+      "id": 28,
+      "question": "You notice a campaign has high CTR but low conversion rate. What is the MOST likely cause?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ad copy is compelling, but the landing page experience or audience targeting is mismatched"
+        },
+        {
+          "label": "B",
+          "text": "The ad timing is wrong"
+        },
+        {
+          "label": "C",
+          "text": "The budget is insufficient"
+        },
+        {
+          "label": "D",
+          "text": "The platform algorithm is flawed"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "The ad copy is compelling, but the landing page experience or audience targeting is mismatched",
+      "explanation": "High CTR means the ad attracts clicks. Low conversion means the post-click experience is broken - usually a landing page or audience targeting issue."
+    },
+    {
+      "id": 29,
+      "question": "Your company wants to try TikTok marketing, but you are a B2B product. What should your first reaction be?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reject it immediately - B2B does not fit TikTok"
+        },
+        {
+          "label": "B",
+          "text": "Research B2B success stories on TikTok first, then assess whether it is worth testing"
+        },
+        {
+          "label": "C",
+          "text": "Start producing videos immediately"
+        },
+        {
+          "label": "D",
+          "text": "Outsource to an influencer agency"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Research B2B success stories on TikTok first, then assess whether it is worth testing",
+      "explanation": "Do not judge a channel fit by intuition. Validate with a small, low-cost test first."
+    },
+    {
+      "id": 30,
+      "question": "A campaign data looks great, but the sales team says these leads are low quality. What should you do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stick with the data - sales just will not follow up"
+        },
+        {
+          "label": "B",
+          "text": "Review the leads downstream conversion data with the sales team and redefine what a good lead means"
+        },
+        {
+          "label": "C",
+          "text": "Switch to a different channel"
+        },
+        {
+          "label": "D",
+          "text": "Increase the number of leads"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Review the leads downstream conversion data with the sales team and redefine what a good lead means",
+      "explanation": "Marketing metrics such as CTR and form submissions and sales metrics such as close rate can diverge. Great marketers track all the way to revenue."
+    }
+  ],
+  "questionss": [
+    {
+      "id": 1,
+      "question": "A React page you built takes over 5 seconds to load, and users are complaining. What should you do FIRST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Immediately introduce code splitting and lazy loading"
+        },
+        {
+          "label": "B",
+          "text": "Use Lighthouse and DevTools to locate the performance bottleneck"
+        },
+        {
+          "label": "C",
+          "text": "Convert all images to WebP format"
+        },
+        {
+          "label": "D",
+          "text": "Upgrade the server configuration"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Use Lighthouse and DevTools to locate the performance bottleneck",
+      "explanation": "Performance optimization always starts with measure first. Find the bottleneck before you fix it."
+    },
+    {
+      "id": 2,
+      "question": "A designer gives you an interaction, but the engineering team says it can't be built this quarter. As a frontend developer, what's the most reasonable approach?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tell the designer \"it can't be done\""
+        },
+        {
+          "label": "B",
+          "text": "Escalate to the project manager to pressure the team"
+        },
+        {
+          "label": "C",
+          "text": "Ask about the specific technical constraints, then find an alternative together"
+        },
+        {
+          "label": "D",
+          "text": "Build it anyway and deal with it after launch"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Ask about the specific technical constraints, then find an alternative together",
+      "explanation": "Great frontend developers protect the user experience while negotiating feasible alternatives with engineering."
+    },
+    {
+      "id": 3,
+      "question": "You find a serious display bug in production, but fixing it requires refactoring a core component. What should you do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Refactor everything immediately—no half measures"
+        },
+        {
+          "label": "B",
+          "text": "Apply a minimal hotfix to stop the bleeding, then plan the refactor"
+        },
+        {
+          "label": "C",
+          "text": "Wait and fix it in the next major release"
+        },
+        {
+          "label": "D",
+          "text": "Only fix it for the devices users complained about"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Apply a minimal hotfix to stop the bleeding, then plan the refactor",
+      "explanation": "Production issues need containment first. Refactoring should happen gradually with proper test coverage."
+    },
+    {
+      "id": 4,
+      "question": "Your React app lags badly on low-end Android phones but runs smoothly on high-end devices. What's the MOST likely cause?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There's a memory leak in the code"
+        },
+        {
+          "label": "B",
+          "text": "Components are re-rendering too frequently"
+        },
+        {
+          "label": "C",
+          "text": "The API responses are too slow"
+        },
+        {
+          "label": "D",
+          "text": "There are too many CSS animations"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Components are re-rendering too frequently",
+      "explanation": "Low-end devices have limited processing power, so unnecessary re-renders get amplified. This is a classic React performance symptom."
+    },
+    {
+      "id": 5,
+      "question": "You want to add real-time validation to a form. Validating on every keystroke causes lag. How should you solve this?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Move the validation logic to a Web Worker"
+        },
+        {
+          "label": "B",
+          "text": "Use debounce or throttle"
+        },
+        {
+          "label": "C",
+          "text": "Switch to validating only on submit"
+        },
+        {
+          "label": "D",
+          "text": "Reduce the number of validation rules"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Use debounce or throttle",
+      "explanation": "Debounce and throttle are the standard solutions for high-frequency events, balancing UX and performance."
+    },
+    {
+      "id": 6,
+      "question": "A payment endpoint might be called twice when a user's network is unstable. How do you prevent double-charging?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Disable the button on the frontend to prevent double clicks"
+        },
+        {
+          "label": "B",
+          "text": "Use an Idempotency Key so the backend recognizes duplicate requests"
+        },
+        {
+          "label": "C",
+          "text": "Just add a unique index to the database"
+        },
+        {
+          "label": "D",
+          "text": "Require users to manually confirm every transaction"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Use an Idempotency Key so the backend recognizes duplicate requests",
+      "explanation": "Frontend button disabling is unreliable—network retries still happen. Idempotency keys are the core mechanism for preventing duplicate payments."
+    },
+    {
+      "id": 7,
+      "question": "Your API response time suddenly jumps from 200ms to 3 seconds. Logs show database queries are normal. What should you check NEXT?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Immediately add Redis caching"
+        },
+        {
+          "label": "B",
+          "text": "Check for N+1 queries or external dependency timeouts in the application layer"
+        },
+        {
+          "label": "C",
+          "text": "Upgrade the database server"
+        },
+        {
+          "label": "D",
+          "text": "Restart all services"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Check for N+1 queries or external dependency timeouts in the application layer",
+      "explanation": "Don't add caching or upgrade hardware without evidence. N+1 queries and external dependencies are common hidden bottlenecks."
+    },
+    {
+      "id": 8,
+      "question": "Your team is choosing a database for a SaaS app. A teammate says, \"Use MongoDB because everyone knows JavaScript.\" What should you do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Agree—a unified tech stack improves development speed"
+        },
+        {
+          "label": "B",
+          "text": "Analyze data relationships, query patterns, and consistency needs before deciding"
+        },
+        {
+          "label": "C",
+          "text": "Choose MySQL because it's more mature"
+        },
+        {
+          "label": "D",
+          "text": "Use both and split by feature"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Analyze data relationships, query patterns, and consistency needs before deciding",
+      "explanation": "Database selection should be based on data characteristics and access patterns, not the team's language preference."
+    },
+    {
+      "id": 9,
+      "question": "After launch, you get an alert: database CPU is at 100%. Which is the LEAST likely cause?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Missing necessary indexes"
+        },
+        {
+          "label": "B",
+          "text": "Slow queries or full table scans"
+        },
+        {
+          "label": "C",
+          "text": "Insufficient server disk space"
+        },
+        {
+          "label": "D",
+          "text": "Connection pool exhaustion causing query buildup"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Insufficient server disk space",
+      "explanation": "Insufficient disk space causes write failures but doesn't directly max out CPU. A, B, and D are all common causes of CPU spikes."
+    },
+    {
+      "id": 10,
+      "question": "A feature works locally but throws errors in production. What should you check FIRST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rewrite the code—it's probably a logic issue"
+        },
+        {
+          "label": "B",
+          "text": "Compare environment variables, dependency versions, and file path differences"
+        },
+        {
+          "label": "C",
+          "text": "Restart the production server"
+        },
+        {
+          "label": "D",
+          "text": "Roll back to the previous version"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Compare environment variables, dependency versions, and file path differences",
+      "explanation": "\"Works locally, fails in production\" is classically caused by environment differences. Compare configurations before rewriting code."
+    },
+    {
+      "id": 11,
+      "question": "A product manager asks you to add a 6-step onboarding flow because activation rates dropped. What should you do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Do it—the PM understands the business better"
+        },
+        {
+          "label": "B",
+          "text": "Analyze the activation funnel data first to confirm where users are actually dropping off"
+        },
+        {
+          "label": "C",
+          "text": "Build a prettier onboarding flow"
+        },
+        {
+          "label": "D",
+          "text": "Refuse—onboarding flows usually don't work"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Analyze the activation funnel data first to confirm where users are actually dropping off",
+      "explanation": "Don't accept the proposed solution (add onboarding) without validating the problem. Determine what's actually causing the activation drop."
+    },
+    {
+      "id": 12,
+      "question": "You designed an interface you're proud of, but user testing shows nobody can complete the task. What do you do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stick with your design—users just don't know how to use it"
+        },
+        {
+          "label": "B",
+          "text": "Redesign it, but feel bitter about it"
+        },
+        {
+          "label": "C",
+          "text": "Study the test recordings to understand what users actually misunderstood"
+        },
+        {
+          "label": "D",
+          "text": "Blame the test environment for being unrealistic"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Study the test recordings to understand what users actually misunderstood",
+      "explanation": "Design quality isn't determined by the designer's preferences. Extract insights from failure instead of defending your ego."
+    },
+    {
+      "id": 13,
+      "question": "Engineering tells you a certain interaction requires a major rewrite to implement. What should you focus on MOST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "What the user's core need is, and whether another approach can satisfy it"
+        },
+        {
+          "label": "B",
+          "text": "Convincing engineering to work overtime"
+        },
+        {
+          "label": "C",
+          "text": "Escalating to the design director"
+        },
+        {
+          "label": "D",
+          "text": "Cutting the interaction—simpler is always better"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "What the user's core need is, and whether another approach can satisfy it",
+      "explanation": "Separate user needs from a specific implementation. If the core need is unchanged, the implementation can be flexible."
+    },
+    {
+      "id": 14,
+      "question": "You're designing a health app for elderly users. Which design decision matters MOST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Using vibrant gradients and dynamic illustrations"
+        },
+        {
+          "label": "B",
+          "text": "Increasing font sizes and touch targets, reducing steps"
+        },
+        {
+          "label": "C",
+          "text": "Adding more animated feedback"
+        },
+        {
+          "label": "D",
+          "text": "Using the latest design trends"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Increasing font sizes and touch targets, reducing steps",
+      "explanation": "The target users' physical abilities dictate the foundational design constraints, not visual trends."
+    },
+    {
+      "id": 15,
+      "question": "Leadership says, \"Our competitor has this feature—let's add it too.\" What's your most reasonable response?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Start designing immediately"
+        },
+        {
+          "label": "B",
+          "text": "First understand how the competitor's users and your users differ in usage scenarios"
+        },
+        {
+          "label": "C",
+          "text": "Add it, but make it look better"
+        },
+        {
+          "label": "D",
+          "text": "Tell leadership the feature is useless for users"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "First understand how the competitor's users and your users differ in usage scenarios",
+      "explanation": "Competitive research is about understanding conventions, not copying. Different user scenarios demand different design decisions."
+    },
+    {
+      "id": 16,
+      "question": "Your company wants to onboard a new SaaS vendor to handle customer data. When reviewing their security documentation, what should you verify FIRST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Where their office is located"
+        },
+        {
+          "label": "B",
+          "text": "Their SOC 2 Type II report and ISO 27001 certification"
+        },
+        {
+          "label": "C",
+          "text": "Whether their pricing is cheap"
+        },
+        {
+          "label": "D",
+          "text": "Whether their website design looks good"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Their SOC 2 Type II report and ISO 27001 certification",
+      "explanation": "Third-party risk management starts with verifying compliance certifications and security practices—not price or appearance."
+    },
+    {
+      "id": 17,
+      "question": "The dev team wants to use a popular open-source logging library. What should you NOT overlook when assessing risk?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Whether the license is compatible"
+        },
+        {
+          "label": "B",
+          "text": "Scanning for known vulnerabilities with SCA tools"
+        },
+        {
+          "label": "C",
+          "text": "How many GitHub stars the library has"
+        },
+        {
+          "label": "D",
+          "text": "The library's maintenance activity and update frequency"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "How many GitHub stars the library has",
+      "explanation": "GitHub stars don't indicate security. License compatibility, known vulnerabilities, and maintenance activity are the real risk factors."
+    },
+    {
+      "id": 18,
+      "question": "Someone claiming to be an IT technician calls the front desk, says they're locked out of the server room, and asks for the access code. What should the front desk do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Give the code—they sound professional"
+        },
+        {
+          "label": "B",
+          "text": "Refuse, and call back on a known internal number to verify their identity"
+        },
+        {
+          "label": "C",
+          "text": "Ask the technician to send an email proving their identity"
+        },
+        {
+          "label": "D",
+          "text": "Give a temporary code and tell them to change it after entering"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Refuse, and call back on a known internal number to verify their identity",
+      "explanation": "This is a classic social engineering attack. Never give out access codes over the phone. Always verify identity through an independent channel."
+    },
+    {
+      "id": 19,
+      "question": "You're reviewing the security of a REST API. Which of the following is LEAST likely to be a common vulnerability you'd test for?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Broken Object Level Authorization"
+        },
+        {
+          "label": "B",
+          "text": "Injection attacks (like SQL injection)"
+        },
+        {
+          "label": "C",
+          "text": "The readability of the API documentation"
+        },
+        {
+          "label": "D",
+          "text": "Missing rate limiting"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "The readability of the API documentation",
+      "explanation": "API documentation readability is a developer experience issue, not a security vulnerability. A, B, and D are all common risks in the OWASP API Security Top 10."
+    },
+    {
+      "id": 20,
+      "question": "You notice a user's account logged in from two locations that are physically impossible to reach at the same time. What's the most reasonable conclusion?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The user might be using a VPN"
+        },
+        {
+          "label": "B",
+          "text": "The account credentials may be compromised—investigate the login IPs and session info immediately"
+        },
+        {
+          "label": "C",
+          "text": "The system clock might be wrong"
+        },
+        {
+          "label": "D",
+          "text": "The user might have shared their account with a friend"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "The account credentials may be compromised—investigate the login IPs and session info immediately",
+      "explanation": "Physically impossible concurrent logins are a strong signal of account compromise. Immediate forensic investigation is required."
+    },
+    {
+      "id": 21,
+      "question": "Sales dropped 20% last month. What should be your FIRST step in analysis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tell your boss \"sales are declining\""
+        },
+        {
+          "label": "B",
+          "text": "Break down the data by region, product category, and customer segment to find patterns"
+        },
+        {
+          "label": "C",
+          "text": "Check what competitors are doing"
+        },
+        {
+          "label": "D",
+          "text": "Wait for this month's data before acting"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Break down the data by region, product category, and customer segment to find patterns",
+      "explanation": "An overall decline is just a signal. You must break it down across dimensions to locate the root cause."
+    },
+    {
+      "id": 22,
+      "question": "You inherit a dataset and find many missing values. What should you NOT do first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Delete all rows containing missing values"
+        },
+        {
+          "label": "B",
+          "text": "Assess the proportion and pattern of missingness first"
+        },
+        {
+          "label": "C",
+          "text": "Determine whether the missingness is random or systematic"
+        },
+        {
+          "label": "D",
+          "text": "Confirm with the business what the missing values represent"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Delete all rows containing missing values",
+      "explanation": "Deleting immediately can lose important information and mask problems in the data collection process. Understand before you handle."
+    },
+    {
+      "id": 23,
+      "question": "You need to explain a complex analysis result to a non-technical executive. What's the best approach?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Present the full statistical model output"
+        },
+        {
+          "label": "B",
+          "text": "Summarize in one sentence: \"What this means\" and \"What to do next\""
+        },
+        {
+          "label": "C",
+          "text": "Give only the conclusion without evidence"
+        },
+        {
+          "label": "D",
+          "text": "Let them look at the data themselves"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Summarize in one sentence: \"What this means\" and \"What to do next\"",
+      "explanation": "Data storytelling centers on the So What and Now What, not statistical details."
+    },
+    {
+      "id": 24,
+      "question": "A dashboard loads very slowly. Which is the LEAST likely cause and solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Inefficient queries—optimize the SQL"
+        },
+        {
+          "label": "B",
+          "text": "Poor data model design—restructure the model"
+        },
+        {
+          "label": "C",
+          "text": "Unattractive color scheme—adjust the palette"
+        },
+        {
+          "label": "D",
+          "text": "Too many visual elements—simplify the dashboard"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Unattractive color scheme—adjust the palette",
+      "explanation": "Colors aren't a performance bottleneck. A, B, and D are all common directions for dashboard performance optimization."
+    },
+    {
+      "id": 25,
+      "question": "A business stakeholder asks you to \"look at the data and find something interesting.\" What should you do first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Build every possible chart"
+        },
+        {
+          "label": "B",
+          "text": "Ask first: What's the business goal? What decision are we supporting?"
+        },
+        {
+          "label": "C",
+          "text": "Run a statistical summary of every column"
+        },
+        {
+          "label": "D",
+          "text": "Pick the most complex model and run it"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Ask first: What's the business goal? What decision are we supporting?",
+      "explanation": "Analysis without a business question is blind exploration. Align on the goal before deciding the analysis path."
+    },
+    {
+      "id": 26,
+      "question": "You're setting up Google Analytics for a new website. What should you do FIRST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Install the GA tracking code immediately"
+        },
+        {
+          "label": "B",
+          "text": "Define business objectives first: What are we measuring as success?"
+        },
+        {
+          "label": "C",
+          "text": "Create as many audience segments as possible"
+        },
+        {
+          "label": "D",
+          "text": "Set up every event you possibly can"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Define business objectives first: What are we measuring as success?",
+      "explanation": "If you don't know what success looks like, you can't know what to track. Business objectives come first."
+    },
+    {
+      "id": 27,
+      "question": "Leadership asks you to \"increase brand awareness.\" What should you determine FIRST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Which social platform to use"
+        },
+        {
+          "label": "B",
+          "text": "What the budget is"
+        },
+        {
+          "label": "C",
+          "text": "How \"increased awareness\" will be measured as success"
+        },
+        {
+          "label": "D",
+          "text": "What competitors are doing"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "How \"increased awareness\" will be measured as success",
+      "explanation": "\"Increase awareness\" isn't an actionable metric. It must be translated into a measurable KPI first."
+    },
+    {
+      "id": 28,
+      "question": "You notice a campaign has high CTR but low conversion rate. What's the MOST likely cause?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The ad copy is compelling, but the landing page experience or audience targeting is mismatched"
+        },
+        {
+          "label": "B",
+          "text": "The ad timing is wrong"
+        },
+        {
+          "label": "C",
+          "text": "The budget is insufficient"
+        },
+        {
+          "label": "D",
+          "text": "The platform algorithm is flawed"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "The ad copy is compelling, but the landing page experience or audience targeting is mismatched",
+      "explanation": "High CTR means the ad attracts clicks. Low conversion means the post-click experience is broken—usually a landing page or audience targeting issue."
+    },
+    {
+      "id": 29,
+      "question": "Your company wants to try TikTok marketing, but you're a B2B product. What should your first reaction be?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reject it immediately—B2B doesn't fit TikTok"
+        },
+        {
+          "label": "B",
+          "text": "Research B2B success stories on TikTok first, then assess whether it's worth testing"
+        },
+        {
+          "label": "C",
+          "text": "Start producing videos immediately"
+        },
+        {
+          "label": "D",
+          "text": "Outsource to an influencer agency"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Research B2B success stories on TikTok first, then assess whether it's worth testing",
+      "explanation": "Don't judge a channel's fit by intuition. Validate with a small, low-cost test first."
+    },
+    {
+      "id": 30,
+      "question": "A campaign's data looks great, but the sales team says \"these leads are low quality.\" What should you do?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stick with the data—sales just won't follow up"
+        },
+        {
+          "label": "B",
+          "text": "Review the leads' downstream conversion data with the sales team and redefine what a \"good lead\" means"
+        },
+        {
+          "label": "C",
+          "text": "Switch to a different channel"
+        },
+        {
+          "label": "D",
+          "text": "Increase the number of leads"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Review the leads' downstream conversion data with the sales team and redefine what a \"good lead\" means",
+      "explanation": "Marketing metrics (CTR, form submissions) and sales metrics (close rate) can diverge. Great marketers track all the way to revenue."
+    }
+  ],
+  "questionsss": [
+  {
+    "id": 1,
+    "question": "Which institution claims the title of Nigeria's first full-fledged fintech bank?",
+    "options": [
+      {
+        "label": "A",
+        "text": "SunTrust Bank"
+      },
+      {
+        "label": "B",
+        "text": "OPay"
+      },
+      {
+        "label": "C",
+        "text": "Kuda"
+      },
+      {
+        "label": "D",
+        "text": "ALAT by Wema"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "SunTrust Bank",
+    "explanation": "The correct answer is A) SunTrust Bank."
+  },
+  {
+    "id": 2,
+    "question": "Which is widely described as Nigeria's first fully digital bank?",
+    "options": [
+      {
+        "label": "A",
+        "text": "SunTrust Bank"
+      },
+      {
+        "label": "B",
+        "text": "OPay"
+      },
+      {
+        "label": "C",
+        "text": "Kuda"
+      },
+      {
+        "label": "D",
+        "text": "ALAT by Wema"
+      }
+    ],
+    "correctOption": "D",
+    "answer": "ALAT by Wema",
+    "explanation": "The correct answer is D) ALAT by Wema."
+  },
+  {
+    "id": 3,
+    "question": "Which of these does NOT perform as a payment gateway?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kuda"
+      },
+      {
+        "label": "B",
+        "text": "Flutterwave"
+      },
+      {
+        "label": "C",
+        "text": "Monipay"
+      },
+      {
+        "label": "D",
+        "text": "Paystack"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "Kuda",
+    "explanation": "The correct answer is A) Kuda."
+  },
+  {
+    "id": 4,
+    "question": "Which company is widely regarded as Nigeria's first unicorn, a startup valued at over $1 billion?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Paystack"
+      },
+      {
+        "label": "B",
+        "text": "Flutterwave"
+      },
+      {
+        "label": "C",
+        "text": "Interswitch"
+      },
+      {
+        "label": "D",
+        "text": "Kuda"
+      }
+    ],
+    "correctOption": "C",
+    "answer": "Interswitch",
+    "explanation": "The correct answer is C) Interswitch, as specified in the supplied answer key."
+  },
+  {
+    "id": 5,
+    "question": "Paystack was acquired in 2020 by which global company?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Google"
+      },
+      {
+        "label": "B",
+        "text": "Stripe"
+      },
+      {
+        "label": "C",
+        "text": "PayPal"
+      },
+      {
+        "label": "D",
+        "text": "Visa"
+      }
+    ],
+    "correctOption": "B",
+    "answer": "Stripe",
+    "explanation": "The correct answer is B) Stripe."
+  },
+  {
+    "id": 6,
+    "question": "OPay is primarily backed by which foreign investor?",
+    "options": [
+      {
+        "label": "A",
+        "text": "SoftBank"
+      },
+      {
+        "label": "B",
+        "text": "Sequoia"
+      },
+      {
+        "label": "C",
+        "text": "Opera Limited"
+      },
+      {
+        "label": "D",
+        "text": "Tencent"
+      }
+    ],
+    "correctOption": "C",
+    "answer": "Opera Limited",
+    "explanation": "The correct answer is C) Opera Limited."
+  },
+  {
+    "id": 7,
+    "question": "Which Nigerian fintech focuses on buy now, pay later (BNPL)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CredPal"
+      },
+      {
+        "label": "B",
+        "text": "Paystack"
+      },
+      {
+        "label": "C",
+        "text": "Flutterwave"
+      },
+      {
+        "label": "D",
+        "text": "Monipay"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "CredPal",
+    "explanation": "The correct answer is A) CredPal."
+  },
+  {
+    "id": 8,
+    "question": "Interswitch is best known for which product?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Quickteller"
+      },
+      {
+        "label": "B",
+        "text": "ALAT"
+      },
+      {
+        "label": "C",
+        "text": "OPay Wallet"
+      },
+      {
+        "label": "D",
+        "text": "Kuda Card"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "Quickteller",
+    "explanation": "The correct answer is A) Quickteller."
+  },
+  {
+    "id": 9,
+    "question": "Which fintech is known for micro-savings and digital ajo/esusu collections?",
+    "options": [
+      {
+        "label": "A",
+        "text": "PiggyVest"
+      },
+      {
+        "label": "B",
+        "text": "Flutterwave"
+      },
+      {
+        "label": "C",
+        "text": "Paystack"
+      },
+      {
+        "label": "D",
+        "text": "SunTrust"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "PiggyVest",
+    "explanation": "The correct answer is A) PiggyVest."
+  },
+  {
+    "id": 10,
+    "question": "What does BVN stand for in Nigerian banking?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bank Verification Number"
+      },
+      {
+        "label": "B",
+        "text": "Bank Vault Number"
+      },
+      {
+        "label": "C",
+        "text": "Basic Verification Network"
+      },
+      {
+        "label": "D",
+        "text": "Biometric Validation Number"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "Bank Verification Number",
+    "explanation": "The correct answer is A) Bank Verification Number."
+  },
+  {
+    "id": 11,
+    "question": "Which of these is NOT a Nigerian fintech company?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kuda"
+      },
+      {
+        "label": "B",
+        "text": "PiggyVest"
+      },
+      {
+        "label": "C",
+        "text": "Cowrywise"
+      },
+      {
+        "label": "D",
+        "text": "Revolut"
+      }
+    ],
+    "correctOption": "D",
+    "answer": "Revolut",
+    "explanation": "The correct answer is D) Revolut."
+  },
+  {
+    "id": 12,
+    "question": "The Central Bank of Nigeria regulates banks and issues licenses under which law?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Banking and Other Financial Institutions Act"
+      },
+      {
+        "label": "B",
+        "text": "NITDA Act"
+      },
+      {
+        "label": "C",
+        "text": "Companies Act"
+      },
+      {
+        "label": "D",
+        "text": "Cybercrimes Act"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "Banking and Other Financial Institutions Act",
+    "explanation": "The correct answer is A) Banking and Other Financial Institutions Act."
+  },
+  {
+    "id": 13,
+    "question": "Which company owns the payment platform OPay?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Opera"
+      },
+      {
+        "label": "B",
+        "text": "Stripe"
+      },
+      {
+        "label": "C",
+        "text": "Flutterwave"
+      },
+      {
+        "label": "D",
+        "text": "Interswitch"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "Opera",
+    "explanation": "The correct answer is A) Opera, according to the supplied answer key."
+  },
+  {
+    "id": 14,
+    "question": "Nigerian USSD banking typically uses which code format?",
+    "options": [
+      {
+        "label": "A",
+        "text": "*123#"
+      },
+      {
+        "label": "B",
+        "text": "*737#"
+      },
+      {
+        "label": "C",
+        "text": "*901#"
+      },
+      {
+        "label": "D",
+        "text": "All of the above are possible"
+      }
+    ],
+    "correctOption": "D",
+    "answer": "All of the above are possible",
+    "explanation": "The correct answer is D) All of the above are possible."
+  },
+  {
+    "id": 15,
+    "question": "Who founded Facebook?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Elon Musk"
+      },
+      {
+        "label": "B",
+        "text": "Mark Zuckerberg"
+      },
+      {
+        "label": "C",
+        "text": "Jeff Bezos"
+      },
+      {
+        "label": "D",
+        "text": "Bill Gates"
+      }
+    ],
+    "correctOption": "B",
+    "answer": "Mark Zuckerberg",
+    "explanation": "The correct answer is B) Mark Zuckerberg."
+  },
+  {
+    "id": 16,
+    "question": "Which company developed Android before Google acquired it?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Apple"
+      },
+      {
+        "label": "B",
+        "text": "Android Inc."
+      },
+      {
+        "label": "C",
+        "text": "Samsung"
+      },
+      {
+        "label": "D",
+        "text": "Nokia"
+      }
+    ],
+    "correctOption": "B",
+    "answer": "Android Inc.",
+    "explanation": "The correct answer is B) Android Inc."
+  },
+  {
+    "id": 17,
+    "question": "Who is the founder of Microsoft?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Steve Jobs"
+      },
+      {
+        "label": "B",
+        "text": "Bill Gates"
+      },
+      {
+        "label": "C",
+        "text": "Larry Page"
+      },
+      {
+        "label": "D",
+        "text": "Mark Zuckerberg"
+      }
+    ],
+    "correctOption": "B",
+    "answer": "Bill Gates",
+    "explanation": "The correct answer is B) Bill Gates, who co-founded Microsoft with Paul Allen."
+  },
+  {
+    "id": 18,
+    "question": "Amazon was founded by whom?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Jeff Bezos"
+      },
+      {
+        "label": "B",
+        "text": "Elon Musk"
+      },
+      {
+        "label": "C",
+        "text": "Jack Ma"
+      },
+      {
+        "label": "D",
+        "text": "Larry Ellison"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "Jeff Bezos",
+    "explanation": "The correct answer is A) Jeff Bezos."
+  },
+  {
+    "id": 19,
+    "question": "What is the name of Google's parent company?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Alphabet"
+      },
+      {
+        "label": "B",
+        "text": "Meta"
+      },
+      {
+        "label": "C",
+        "text": "Amazon Inc."
+      },
+      {
+        "label": "D",
+        "text": "Oracle"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "Alphabet",
+    "explanation": "The correct answer is A) Alphabet."
+  },
+  {
+    "id": 20,
+    "question": "Which Nigerian is known as a co-founder of Flutterwave?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Iyinoluwa Aboyeji"
+      },
+      {
+        "label": "B",
+        "text": "Aliko Dangote"
+      },
+      {
+        "label": "C",
+        "text": "Tony Elumelu"
+      },
+      {
+        "label": "D",
+        "text": "Mike Adenuga"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "Iyinoluwa Aboyeji",
+    "explanation": "The correct answer is A) Iyinoluwa Aboyeji, who co-founded Flutterwave."
+  },
+  {
+    "id": 21,
+    "question": "Computers operate using what language at the machine level?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Python"
+      },
+      {
+        "label": "B",
+        "text": "Binary"
+      },
+      {
+        "label": "C",
+        "text": "SQL"
+      },
+      {
+        "label": "D",
+        "text": "Java"
+      }
+    ],
+    "correctOption": "B",
+    "answer": "Binary",
+    "explanation": "The correct answer is B) Binary, which represents data using 0s and 1s."
+  },
+  {
+    "id": 22,
+    "question": "What does CPU stand for?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Central Processing Unit"
+      },
+      {
+        "label": "B",
+        "text": "Computer Personal Unit"
+      },
+      {
+        "label": "C",
+        "text": "Central Program Utility"
+      },
+      {
+        "label": "D",
+        "text": "Core Processing Utility"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "Central Processing Unit",
+    "explanation": "The correct answer is A) Central Processing Unit."
+  },
+  {
+    "id": 23,
+    "question": "Which of these is a high-level programming language?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Binary"
+      },
+      {
+        "label": "B",
+        "text": "Machine code"
+      },
+      {
+        "label": "C",
+        "text": "Python"
+      },
+      {
+        "label": "D",
+        "text": "Assembly"
+      }
+    ],
+    "correctOption": "C",
+    "answer": "Python",
+    "explanation": "The correct answer is C) Python, a high-level programming language."
+  },
+  {
+    "id": 24,
+    "question": "What does RAM stand for?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Random Access Memory"
+      },
+      {
+        "label": "B",
+        "text": "Read Access Memory"
+      },
+      {
+        "label": "C",
+        "text": "Rapid Access Module"
+      },
+      {
+        "label": "D",
+        "text": "Runtime Access Memory"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "Random Access Memory",
+    "explanation": "The correct answer is A) Random Access Memory."
+  },
+  {
+    "id": 25,
+    "question": "Which language is primarily used for styling web pages?",
+    "options": [
+      {
+        "label": "A",
+        "text": "HTML"
+      },
+      {
+        "label": "B",
+        "text": "CSS"
+      },
+      {
+        "label": "C",
+        "text": "SQL"
+      },
+      {
+        "label": "D",
+        "text": "Python"
+      }
+    ],
+    "correctOption": "B",
+    "answer": "CSS",
+    "explanation": "The correct answer is B) CSS, which controls the presentation and styling of web pages."
+  },
+  {
+    "id": 26,
+    "question": "What does SQL stand for?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Structured Query Language"
+      },
+      {
+        "label": "B",
+        "text": "Simple Query Logic"
+      },
+      {
+        "label": "C",
+        "text": "System Quality Language"
+      },
+      {
+        "label": "D",
+        "text": "Standard Query Line"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "Structured Query Language",
+    "explanation": "The correct answer is A) Structured Query Language."
+  },
+  {
+    "id": 27,
+    "question": "What does URL stand for?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Uniform Resource Locator"
+      },
+      {
+        "label": "B",
+        "text": "Universal Reference Link"
+      },
+      {
+        "label": "C",
+        "text": "Unified Routing Layer"
+      },
+      {
+        "label": "D",
+        "text": "User Resource Location"
+      }
+    ],
+    "correctOption": "A",
+    "answer": "Uniform Resource Locator",
+    "explanation": "The correct answer is A) Uniform Resource Locator."
+  },
+  {
+    "id": 28,
+    "question": "Which platform is commonly credited as Nigeria's first e-commerce platform?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nairaland"
+      },
+      {
+        "label": "B",
+        "text": "Jiji"
+      },
+      {
+        "label": "C",
+        "text": "Konga"
+      },
+      {
+        "label": "D",
+        "text": "Jumia"
+      }
+    ],
+    "correctOption": "D",
+    "answer": "Jumia",
+    "explanation": "The correct answer is D) Jumia, according to the supplied answer key."
+  },
+  {
+    "id": 29,
+    "question": "In which year was Konga founded?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2010"
+      },
+      {
+        "label": "B",
+        "text": "2012"
+      },
+      {
+        "label": "C",
+        "text": "2014"
+      },
+      {
+        "label": "D",
+        "text": "2016"
+      }
+    ],
+    "correctOption": "B",
+    "answer": "2012",
+    "explanation": "The correct answer is B) 2012."
+  },
+  {
+    "id": 30,
+    "question": "Nairaland is best described as what?",
+    "options": [
+      {
+        "label": "A",
+        "text": "An e-commerce store"
+      },
+      {
+        "label": "B",
+        "text": "An online forum"
+      },
+      {
+        "label": "C",
+        "text": "A payment gateway"
+      },
+      {
+        "label": "D",
+        "text": "A digital bank"
+      }
+    ],
+    "correctOption": "B",
+    "answer": "An online forum",
+    "explanation": "The correct answer is B) An online forum."
+  }
+],
+  "questionsssss": [
+    {
+      "id": 1,
+      "question": "Which Nigerian fintech is best known for agent banking and POS terminals?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Moniepoint"
+        },
+        {
+          "label": "B",
+          "text": "Kuda"
+        },
+        {
+          "label": "C",
+          "text": "PiggyVest"
+        },
+        {
+          "label": "D",
+          "text": "Cowrywise"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Moniepoint",
+      "explanation": "Moniepoint is widely associated with agent banking in Nigeria. Its agents use POS terminals to help customers make deposits, withdrawals and transfers."
+    },
+    {
+      "id": 2,
+      "question": "PalmPay is primarily backed by which Chinese company?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tencent"
+        },
+        {
+          "label": "B",
+          "text": "Alibaba"
+        },
+        {
+          "label": "C",
+          "text": "Transsion Holdings"
+        },
+        {
+          "label": "D",
+          "text": "ByteDance"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Transsion Holdings",
+      "explanation": "PalmPay is backed by Transsion Holdings, the Chinese technology group known for brands such as TECNO, Infinix and itel."
+    },
+    {
+      "id": 3,
+      "question": "Which of these is a Payment Service Bank (PSB) licensed by the CBN?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Kuda"
+        },
+        {
+          "label": "B",
+          "text": "Hope PSB"
+        },
+        {
+          "label": "C",
+          "text": "ALAT"
+        },
+        {
+          "label": "D",
+          "text": "VBank"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Hope PSB",
+      "explanation": "Hope PSB is a Payment Service Bank licensed by the Central Bank of Nigeria. PSBs focus on basic financial services such as payments and deposits."
+    },
+    {
+      "id": 4,
+      "question": "Carbon (formerly Paylater) is mainly focused on:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Savings"
+        },
+        {
+          "label": "B",
+          "text": "Payment gateway"
+        },
+        {
+          "label": "C",
+          "text": "Digital lending"
+        },
+        {
+          "label": "D",
+          "text": "Wealth management"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Digital lending",
+      "explanation": "Carbon is known mainly for digital lending. Customers can apply for loans through its digital platform without visiting a traditional bank branch."
+    },
+    {
+      "id": 5,
+      "question": "Which company operates the “OWealth” interest-bearing wallet?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PalmPay"
+        },
+        {
+          "label": "B",
+          "text": "FairMoney"
+        },
+        {
+          "label": "C",
+          "text": "OPay"
+        },
+        {
+          "label": "D",
+          "text": "Chipper Cash"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "OPay",
+      "explanation": "OPay operates OWealth, a wallet product that allows eligible users to earn returns on funds held in the wallet, subject to its terms."
+    },
+    {
+      "id": 6,
+      "question": "TeamApt is the parent company of which popular agent banking brand?",
+      "options": [
+        {
+          "label": "A",
+          "text": "OPay"
+        },
+        {
+          "label": "B",
+          "text": "PalmPay"
+        },
+        {
+          "label": "C",
+          "text": "Paga"
+        },
+        {
+          "label": "D",
+          "text": "Moniepoint"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Moniepoint",
+      "explanation": "TeamApt developed the financial technology and agent-banking business that operates under the Moniepoint brand."
+    },
+    {
+      "id": 7,
+      "question": "Which Nigerian fintech is known for dollar-denominated investments?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both A and C"
+        },
+        {
+          "label": "B",
+          "text": "Risevest"
+        },
+        {
+          "label": "C",
+          "text": "PiggyVest"
+        },
+        {
+          "label": "D",
+          "text": "Cowrywise"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Both A and C",
+      "explanation": "Risevest and Cowrywise both provide investment products that can give users exposure to dollar-denominated assets. Product availability and terms may differ."
+    },
+    {
+      "id": 8,
+      "question": "Paga is best described as a:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Digital bank"
+        },
+        {
+          "label": "B",
+          "text": "Mobile money / payments company"
+        },
+        {
+          "label": "C",
+          "text": "Investment platform"
+        },
+        {
+          "label": "D",
+          "text": "BNPL provider"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Mobile money / payments company",
+      "explanation": "Paga is a mobile money and payments company. Its services help individuals and businesses send, receive and make payments."
+    },
+    {
+      "id": 9,
+      "question": "Which of these is NOT a licensed Microfinance Bank in Nigeria?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Kuda MFB"
+        },
+        {
+          "label": "B",
+          "text": "FairMoney MFB"
+        },
+        {
+          "label": "C",
+          "text": "Carbon MFB"
+        },
+        {
+          "label": "D",
+          "text": "Renmoney"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Kuda MFB",
+      "explanation": "This question appears to have an issue: FairMoney MFB, Carbon MFB and Kuda MFB are all associated with licensed microfinance banking operations, and Renmoney also operates as a microfinance bank. The answer key should be reviewed because the options may not contain a clearly correct choice."
+    },
+    {
+      "id": 10,
+      "question": "NQR (Nigeria Quick Response) code is an initiative of:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both A and B"
+        },
+        {
+          "label": "B",
+          "text": "NIBSS"
+        },
+        {
+          "label": "C",
+          "text": "CBN"
+        },
+        {
+          "label": "D",
+          "text": "Interswitch"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Both A and B",
+      "explanation": "NQR is Nigeria's interoperable quick-response payment solution. It was developed by NIBSS in collaboration with the Central Bank of Nigeria, which is why both are listed."
+    },
+    {
+      "id": 11,
+      "question": "Which company launched Nigeria’s first fully free banking app with no monthly fees?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ALAT"
+        },
+        {
+          "label": "B",
+          "text": "VBank"
+        },
+        {
+          "label": "C",
+          "text": "Sparkle"
+        },
+        {
+          "label": "D",
+          "text": "Kuda"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Kuda",
+      "explanation": "Kuda became known for its digital banking app and a fee structure that removed several traditional banking charges. The wording 'first fully free' is broad and may need a source or qualification."
+    },
+    {
+      "id": 12,
+      "question": "Chipper Cash is headquartered in:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nigeria"
+        },
+        {
+          "label": "B",
+          "text": "Ghana"
+        },
+        {
+          "label": "C",
+          "text": "Kenya"
+        },
+        {
+          "label": "D",
+          "text": "South Africa"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Ghana",
+      "explanation": "The supplied answer key says Ghana, but this item should be checked: Chipper Cash was founded in Africa and has had operations across several countries; its headquarters is commonly reported as San Francisco, United States. Consider revising the question or answer."
+    },
+    {
+      "id": 13,
+      "question": "Which Nigerian fintech was founded by Tosin Oladapo?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cowrywise"
+        },
+        {
+          "label": "B",
+          "text": "PiggyVest"
+        },
+        {
+          "label": "C",
+          "text": "Risevest"
+        },
+        {
+          "label": "D",
+          "text": "Bamboo"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "PiggyVest",
+      "explanation": "The supplied answer key identifies PiggyVest, but the founder attribution should be checked before using this question. PiggyVest is associated with co-founders including Somto Ifezue, Odunayo Eweniyi and Joshua Chibueze; Tosin Oladapo is not a commonly listed co-founder."
+    },
+    {
+      "id": 14,
+      "question": "The “eNaira” is Nigeria’s:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Digital bank"
+        },
+        {
+          "label": "B",
+          "text": "Payment gateway"
+        },
+        {
+          "label": "C",
+          "text": "Mobile money wallet"
+        },
+        {
+          "label": "D",
+          "text": "Central Bank Digital Currency (CBDC)"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Central Bank Digital Currency (CBDC)",
+      "explanation": "The eNaira is Nigeria's Central Bank Digital Currency (CBDC). It is a digital form of the naira issued by the Central Bank of Nigeria."
+    },
+    {
+      "id": 15,
+      "question": "Who co-founded Andela alongside Iyinoluwa Aboyeji?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Jeremy Johnson"
+        },
+        {
+          "label": "B",
+          "text": "Shola Akinlade"
+        },
+        {
+          "label": "C",
+          "text": "Ezra Olubi"
+        },
+        {
+          "label": "D",
+          "text": "Odunayo Eweniyi"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Jeremy Johnson",
+      "explanation": "Jeremy Johnson co-founded Andela with Iyinoluwa Aboyeji. Andela was established to identify, train and connect African software developers with global opportunities."
+    },
+    {
+      "id": 16,
+      "question": "Who is the CEO and co-founder of Paystack?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Shola Akinlade"
+        },
+        {
+          "label": "B",
+          "text": "Ezra Olubi"
+        },
+        {
+          "label": "C",
+          "text": "Iyinoluwa Aboyeji"
+        },
+        {
+          "label": "D",
+          "text": "Both A and B"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Both A and B",
+      "explanation": "Shola Akinlade and Ezra Olubi co-founded Paystack. However, Shola Akinlade is the CEO; Ezra Olubi is a co-founder and served as the company's CTO. The question should ask who co-founded Paystack, rather than who is CEO and co-founder."
+    },
+    {
+      "id": 17,
+      "question": "Twitter (now X) was co-founded by:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Elon Musk"
+        },
+        {
+          "label": "B",
+          "text": "Jack Dorsey"
+        },
+        {
+          "label": "C",
+          "text": "Mark Zuckerberg"
+        },
+        {
+          "label": "D",
+          "text": "Evan Spiegel"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Jack Dorsey",
+      "explanation": "Jack Dorsey was one of Twitter's co-founders, alongside Biz Stone, Evan Williams and Noah Glass. Elon Musk acquired Twitter later and renamed it X."
+    },
+    {
+      "id": 18,
+      "question": "Apple was co-founded by Steve Jobs and:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bill Gates"
+        },
+        {
+          "label": "B",
+          "text": "Tim Cook"
+        },
+        {
+          "label": "C",
+          "text": "Jony Ive"
+        },
+        {
+          "label": "D",
+          "text": "Steve Wozniak"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Steve Wozniak",
+      "explanation": "Steve Wozniak co-founded Apple with Steve Jobs and Ronald Wayne. Wozniak was the company's engineering force behind the early Apple computers."
+    },
+    {
+      "id": 19,
+      "question": "The World Wide Web was invented by:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tim Berners-Lee"
+        },
+        {
+          "label": "B",
+          "text": "Bill Gates"
+        },
+        {
+          "label": "C",
+          "text": "Steve Jobs"
+        },
+        {
+          "label": "D",
+          "text": "Larry Page"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Tim Berners-Lee",
+      "explanation": "Tim Berners-Lee invented the World Wide Web while working at CERN. He developed the key technologies that made it possible to access linked information on the internet."
+    },
+    {
+      "id": 20,
+      "question": "What does “API” stand for in technology?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Advanced Program Integration"
+        },
+        {
+          "label": "B",
+          "text": "Automated Process Input"
+        },
+        {
+          "label": "C",
+          "text": "Application Programming Interface"
+        },
+        {
+          "label": "D",
+          "text": "Application Process Interface"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Application Programming Interface",
+      "explanation": "API means Application Programming Interface. It is a set of rules that allows different software applications or services to communicate with one another."
+    },
+    {
+      "id": 21,
+      "question": "What does “HTTP” stand for?",
+      "options": [
+        {
+          "label": "A",
+          "text": "High Transfer Text Protocol"
+        },
+        {
+          "label": "B",
+          "text": "HyperText Transfer Protocol"
+        },
+        {
+          "label": "C",
+          "text": "Hyperlink Text Transfer Process"
+        },
+        {
+          "label": "D",
+          "text": "Host Transfer Text Protocol"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "HyperText Transfer Protocol",
+      "explanation": "HTTP means HyperText Transfer Protocol. It is the protocol used for transferring web resources between a browser or other client and a web server."
+    },
+    {
+      "id": 22,
+      "question": "GPU stands for:",
+      "options": [
+        {
+          "label": "A",
+          "text": "General Processing Unit"
+        },
+        {
+          "label": "B",
+          "text": "Graphical Program Utility"
+        },
+        {
+          "label": "C",
+          "text": "Graphics Processing Unit"
+        },
+        {
+          "label": "D",
+          "text": "Global Processing Unit"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Graphics Processing Unit",
+      "explanation": "GPU means Graphics Processing Unit. It is a processor designed to handle graphics and other tasks that benefit from performing many calculations in parallel."
+    },
+    {
+      "id": 23,
+      "question": "Which of these is a type of non-volatile storage?",
+      "options": [
+        {
+          "label": "A",
+          "text": "RAM"
+        },
+        {
+          "label": "B",
+          "text": "Cache"
+        },
+        {
+          "label": "C",
+          "text": "SSD"
+        },
+        {
+          "label": "D",
+          "text": "Register"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "SSD",
+      "explanation": "An SSD is non-volatile storage, meaning it retains saved data even when the computer is turned off. RAM, cache and registers are volatile forms of memory."
+    },
+    {
+      "id": 24,
+      "question": "What does “IoT” stand for?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Input of Technology"
+        },
+        {
+          "label": "B",
+          "text": "Integrated Online Tools"
+        },
+        {
+          "label": "C",
+          "text": "Internal Operating Technology"
+        },
+        {
+          "label": "D",
+          "text": "Internet of Things"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Internet of Things",
+      "explanation": "IoT means Internet of Things. It describes physical devices connected to the internet that can collect, send or exchange data."
+    },
+    {
+      "id": 25,
+      "question": "Which language is primarily used for adding interactivity to websites?",
+      "options": [
+        {
+          "label": "A",
+          "text": "JavaScript"
+        },
+        {
+          "label": "B",
+          "text": "HTML"
+        },
+        {
+          "label": "C",
+          "text": "CSS"
+        },
+        {
+          "label": "D",
+          "text": "SQL"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "JavaScript",
+      "explanation": "JavaScript is primarily used to add interactivity and dynamic behaviour to websites, such as responding to clicks, validating forms and updating page content."
+    },
+    {
+      "id": 26,
+      "question": "What does “VPN” stand for?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Virtual Public Network"
+        },
+        {
+          "label": "B",
+          "text": "Virtual Private Network"
+        },
+        {
+          "label": "C",
+          "text": "Verified Private Network"
+        },
+        {
+          "label": "D",
+          "text": "Virtual Protocol Network"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Virtual Private Network",
+      "explanation": "VPN means Virtual Private Network. It creates an encrypted connection over a network, helping protect data in transit and providing a more private connection."
+    },
+    {
+      "id": 27,
+      "question": "Jiji.ng is best described as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "A payment company"
+        },
+        {
+          "label": "B",
+          "text": "An online classifieds / marketplace"
+        },
+        {
+          "label": "C",
+          "text": "A digital bank"
+        },
+        {
+          "label": "D",
+          "text": "A logistics company"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "An online classifieds / marketplace",
+      "explanation": "Jiji.ng is an online classifieds marketplace where users can list, discover and buy or sell items and services."
+    },
+    {
+      "id": 28,
+      "question": "Which Nigerian e-commerce company was acquired by Konga in a major deal years ago?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Jumia"
+        },
+        {
+          "label": "B",
+          "text": "Slot"
+        },
+        {
+          "label": "C",
+          "text": "Konga itself was never acquired"
+        },
+        {
+          "label": "D",
+          "text": "DealDey"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "DealDey",
+      "explanation": "DealDey was a Nigerian daily-deals and e-commerce platform that was acquired by Konga. The question refers to that earlier acquisition."
+    },
+    {
+      "id": 29,
+      "question": "Slot Nigeria is primarily known for selling:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phones, gadgets and electronics"
+        },
+        {
+          "label": "B",
+          "text": "Groceries"
+        },
+        {
+          "label": "C",
+          "text": "Fashion"
+        },
+        {
+          "label": "D",
+          "text": "Furniture"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Phones, gadgets and electronics",
+      "explanation": "Slot Nigeria is best known as a retailer of mobile phones, computers, accessories and other consumer electronics."
+    },
+    {
+      "id": 30,
+      "question": "Which platform is Nigeria’s most popular online classifieds site for buying and selling used items?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Jumia"
+        },
+        {
+          "label": "B",
+          "text": "Konga"
+        },
+        {
+          "label": "C",
+          "text": "Jiji"
+        },
+        {
+          "label": "D",
+          "text": "OLX"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Jiji",
+      "explanation": "Jiji is an online classifieds platform where individuals and businesses can advertise items, including used goods, for sale."
+    }
+  ],
+   "question": [
+    {
+      "id": 1,
+      "question": "The CEO of Monipay is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Awonuga Sheriff"
+        },
+        {
+          "label": "B",
+          "text": "Awonuga Lookman"
+        },
+        {
+          "label": "C",
+          "text": "Coolchi"
+        },
+        {
+          "label": "D",
+          "text": "Ademola Bayo"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Awonuga Sheriff",
+      "explanation": "Awonuga Sheriff is identified as Monipay's CEO in the supplied answer. The CEO leads the company's overall direction and major business decisions."
+    },
+    {
+      "id": 2,
+      "question": "Tech Talent Academy was founded in what year?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2020"
+        },
+        {
+          "label": "B",
+          "text": "2024"
+        },
+        {
+          "label": "C",
+          "text": "2023"
+        },
+        {
+          "label": "D",
+          "text": "2025"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "2024",
+      "explanation": "The supplied answer gives 2024 as the founding year of Tech Talent Academy."
+    },
+    {
+      "id": 3,
+      "question": "In product management, the best method used in practice is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Agile and Waterfall method"
+        },
+        {
+          "label": "B",
+          "text": "Waterfall"
+        },
+        {
+          "label": "C",
+          "text": "Agile method"
+        },
+        {
+          "label": "D",
+          "text": "Kanban method"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Agile and Waterfall method",
+      "explanation": "Agile supports iterative work and regular feedback, while Waterfall follows a more sequential plan. A team may combine elements of both depending on its project needs."
+    },
+    {
+      "id": 4,
+      "question": "TTA Tech Horizon version 1.0 was done when?",
+      "options": [
+        {
+          "label": "A",
+          "text": "January 2026"
+        },
+        {
+          "label": "B",
+          "text": "January 2025"
+        },
+        {
+          "label": "C",
+          "text": "March 2026"
+        },
+        {
+          "label": "D",
+          "text": "March 2027"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "January 2026",
+      "explanation": "The supplied answer states that TTA Tech Horizon version 1.0 was completed in January 2026."
+    },
+    {
+      "id": 5,
+      "question": "TTA Tech Horizon version 2.0 is scheduled to hold when?",
+      "options": [
+        {
+          "label": "A",
+          "text": "January 2026"
+        },
+        {
+          "label": "B",
+          "text": "January 2025"
+        },
+        {
+          "label": "C",
+          "text": "March 2026"
+        },
+        {
+          "label": "D",
+          "text": "March 2027"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "March 2027",
+      "explanation": "The scheduled date given for TTA Tech Horizon version 2.0 is March 2027."
+    },
+    {
+      "id": 6,
+      "question": "The football game between TTA staff and Account Credit staff was won by who?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Auto Credit staff"
+        },
+        {
+          "label": "B",
+          "text": "TTA staff"
+        },
+        {
+          "label": "C",
+          "text": "Both A & B"
+        },
+        {
+          "label": "D",
+          "text": "No winner"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "TTA staff",
+      "explanation": "According to the supplied answer, TTA staff won the football match."
+    },
+    {
+      "id": 7,
+      "question": "NITDA is targeting what amount as an investment pipeline for Nigerian startups through the Builders' Festival?",
+      "options": [
+        {
+          "label": "A",
+          "text": "N1 billion"
+        },
+        {
+          "label": "B",
+          "text": "N5 billion"
+        },
+        {
+          "label": "C",
+          "text": "N10 billion"
+        },
+        {
+          "label": "D",
+          "text": "N3 billion"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "N3 billion",
+      "explanation": "The stated target is N3 billion. An investment pipeline refers to potential funding opportunities being brought together to support startups."
+    },
+    {
+      "id": 8,
+      "question": "The Builders' Festival 2026 is scheduled to hold in which city?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Abuja"
+        },
+        {
+          "label": "B",
+          "text": "Lagos"
+        },
+        {
+          "label": "C",
+          "text": "Port Harcourt"
+        },
+        {
+          "label": "D",
+          "text": "Kano"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Abuja",
+      "explanation": "Abuja is the city specified for the 2026 Builders' Festival in the supplied quiz information."
+    },
+    {
+      "id": 9,
+      "question": "NITDA's Director-General is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tosin Eniolorunda"
+        },
+        {
+          "label": "B",
+          "text": "Bosun Tijani"
+        },
+        {
+          "label": "C",
+          "text": "Lamido Yuguda"
+        },
+        {
+          "label": "D",
+          "text": "Kashifu Inuwa Abdullahi"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Kashifu Inuwa Abdullahi",
+      "explanation": "Kashifu Inuwa Abdullahi is the answer supplied for NITDA's Director-General."
+    },
+    {
+      "id": 10,
+      "question": "Moniepoint's CEO was named to which international list in 2026?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Forbes 30 Under 30"
+        },
+        {
+          "label": "B",
+          "text": "TIME100 Next"
+        },
+        {
+          "label": "C",
+          "text": "Bloomberg 50"
+        },
+        {
+          "label": "D",
+          "text": "Fortune 40 Under 40"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "TIME100 Next",
+      "explanation": "The supplied answer is TIME100 Next, a list published by TIME that recognises emerging influential people."
+    },
+    {
+      "id": 11,
+      "question": "Which two agencies are leading Nigeria's sovereign cloud initiative for the financial sector?",
+      "options": [
+        {
+          "label": "A",
+          "text": "CBN and NCC"
+        },
+        {
+          "label": "B",
+          "text": "NITDA and NIBSS"
+        },
+        {
+          "label": "C",
+          "text": "CBN and SEC"
+        },
+        {
+          "label": "D",
+          "text": "CBN and NITDA"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "CBN and NITDA",
+      "explanation": "The supplied answer names the Central Bank of Nigeria (CBN) and the National Information Technology Development Agency (NITDA)."
+    },
+    {
+      "id": 12,
+      "question": "The 2026 World Internet Conference Leading Science and Technology Award ceremony was held in which Chinese city?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Beijing"
+        },
+        {
+          "label": "B",
+          "text": "Shanghai"
+        },
+        {
+          "label": "C",
+          "text": "Shenzhen"
+        },
+        {
+          "label": "D",
+          "text": "Wuzhen"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Wuzhen",
+      "explanation": "Wuzhen is the city named in the supplied answer for the 2026 World Internet Conference award ceremony."
+    },
+    {
+      "id": 13,
+      "question": "Which Chinese quantum computing prototype was among the top award winners at the 2026 World Internet Conference?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Jiuzhang No. 3"
+        },
+        {
+          "label": "B",
+          "text": "Zuchongzhi No. 2"
+        },
+        {
+          "label": "C",
+          "text": "Jiuzhang No. 4"
+        },
+        {
+          "label": "D",
+          "text": "Tianhe-3"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Jiuzhang No. 4",
+      "explanation": "The supplied answer is Jiuzhang No. 4, identified in the question as a Chinese quantum computing prototype."
+    },
+    {
+      "id": 14,
+      "question": "At the French Tech Summit in Lagos, experts warned that excessive dependence on AI-assisted tools could weaken what among engineers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Communication skills"
+        },
+        {
+          "label": "B",
+          "text": "Project management skills"
+        },
+        {
+          "label": "C",
+          "text": "Fundamental engineering skills"
+        },
+        {
+          "label": "D",
+          "text": "Marketing skills"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Fundamental engineering skills",
+      "explanation": "The concern is that over-reliance on AI tools could weaken fundamental engineering skills. Engineers still need strong technical foundations to assess and solve problems."
+    },
+    {
+      "id": 15,
+      "question": "The French Tech Summit in Lagos was organised by the Franco-Nigerian Chamber of Commerce in collaboration with:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Google Africa"
+        },
+        {
+          "label": "B",
+          "text": "Meta Nigeria"
+        },
+        {
+          "label": "C",
+          "text": "French Tech Lagos"
+        },
+        {
+          "label": "D",
+          "text": "African Development Bank"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "French Tech Lagos",
+      "explanation": "French Tech Lagos is the collaborator named in the supplied answer, alongside the Franco-Nigerian Chamber of Commerce."
+    },
+    {
+      "id": 16,
+      "question": "Which organisation published the TIME100 Next 2026 list?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Forbes"
+        },
+        {
+          "label": "B",
+          "text": "The Economist"
+        },
+        {
+          "label": "C",
+          "text": "Bloomberg"
+        },
+        {
+          "label": "D",
+          "text": "TIME magazine"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "TIME magazine",
+      "explanation": "TIME magazine publishes the TIME100 Next list, which highlights emerging leaders and influential people."
+    },
+    {
+      "id": 17,
+      "question": "The NITDA Builders' Festival 2026 is scheduled for which dates?",
+      "options": [
+        {
+          "label": "A",
+          "text": "November 1–3"
+        },
+        {
+          "label": "B",
+          "text": "November 10–12"
+        },
+        {
+          "label": "C",
+          "text": "December 5–7"
+        },
+        {
+          "label": "D",
+          "text": "October 20–22"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "November 10–12",
+      "explanation": "The dates supplied for the 2026 NITDA Builders' Festival are November 10–12."
+    },
+    {
+      "id": 18,
+      "question": "Which global tech company acquired Paystack in 2020?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Stripe"
+        },
+        {
+          "label": "B",
+          "text": "Flutterwave"
+        },
+        {
+          "label": "C",
+          "text": "Interswitch"
+        },
+        {
+          "label": "D",
+          "text": "Paga"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "Stripe",
+      "explanation": "Stripe is the company identified in the supplied answer as acquiring Paystack in 2020. Paystack provides payment technology for businesses."
+    },
+    {
+      "id": 19,
+      "question": "The \"eNaira\" is classified as Nigeria's:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mobile money wallet"
+        },
+        {
+          "label": "B",
+          "text": "Commercial bank product"
+        },
+        {
+          "label": "C",
+          "text": "Central Bank Digital Currency"
+        },
+        {
+          "label": "D",
+          "text": "Payment gateway"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Central Bank Digital Currency",
+      "explanation": "The eNaira is Nigeria's Central Bank Digital Currency (CBDC), a digital form of the country's currency issued by its central bank."
+    },
+    {
+      "id": 20,
+      "question": "Which of these is a Nigerian Payment Service Bank (PSB)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Kuda"
+        },
+        {
+          "label": "B",
+          "text": "ALAT"
+        },
+        {
+          "label": "C",
+          "text": "Hope PSB"
+        },
+        {
+          "label": "D",
+          "text": "VBank"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Hope PSB",
+      "explanation": "Hope PSB is the option identified as a Payment Service Bank. PSBs focus on payment and related financial services under regulatory oversight."
+    },
+    {
+      "id": 21,
+      "question": "Moniepoint's co-founder and CTO, who co-founded the company with Tosin Eniolorunda in 2015, is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ezra Olubi"
+        },
+        {
+          "label": "B",
+          "text": "Felix Ike"
+        },
+        {
+          "label": "C",
+          "text": "Shola Akinlade"
+        },
+        {
+          "label": "D",
+          "text": "Odunayo Eweniyi"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Felix Ike",
+      "explanation": "Felix Ike is the answer supplied. CTO means Chief Technology Officer, the executive responsible for an organisation's technology direction."
+    },
+    {
+      "id": 22,
+      "question": "Which international publication named Moniepoint's CEO to its 2026 rising leaders list?",
+      "options": [
+        {
+          "label": "A",
+          "text": "TIME"
+        },
+        {
+          "label": "B",
+          "text": "Forbes"
+        },
+        {
+          "label": "C",
+          "text": "Wired"
+        },
+        {
+          "label": "D",
+          "text": "TechCrunch"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "TIME",
+      "explanation": "TIME is the publication named in the supplied answer for the 2026 rising-leaders recognition."
+    },
+    {
+      "id": 23,
+      "question": "What does \"NITDA\" stand for?",
+      "options": [
+        {
+          "label": "A",
+          "text": "National Information Technology Development Agency"
+        },
+        {
+          "label": "B",
+          "text": "Nigerian Internet and Telecom Development Authority"
+        },
+        {
+          "label": "C",
+          "text": "National Innovation and Tech Advancement Agency"
+        },
+        {
+          "label": "D",
+          "text": "Nigeria IT Data Association"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "National Information Technology Development Agency",
+      "explanation": "NITDA stands for National Information Technology Development Agency."
+    },
+    {
+      "id": 24,
+      "question": "At the 2026 World Internet Conference, Microsoft presented which product as a next-generation productivity engine?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Azure Quantum"
+        },
+        {
+          "label": "B",
+          "text": "Office AI"
+        },
+        {
+          "label": "C",
+          "text": "Copilot Cowork"
+        },
+        {
+          "label": "D",
+          "text": "Windows Agent"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "Copilot Cowork",
+      "explanation": "Copilot Cowork is the product named in the supplied answer. The question describes it as Microsoft's next-generation productivity engine."
+    },
+    {
+      "id": 25,
+      "question": "NITDA's Strategic Roadmap and Action Plan, which prioritises connecting talent to opportunities and startups to capital, is called:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Digital Nigeria 2030"
+        },
+        {
+          "label": "B",
+          "text": "SRAP 2.0"
+        },
+        {
+          "label": "C",
+          "text": "NITDA Vision 2025"
+        },
+        {
+          "label": "D",
+          "text": "Tech Growth Plan"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "SRAP 2.0",
+      "explanation": "The roadmap is called SRAP 2.0, short for Strategic Roadmap and Action Plan 2.0. The priorities mentioned include connecting talent with opportunities and startups with capital."
+    },
+    {
+      "id": 26,
+      "question": "Which Nigerian fintech is best known for agent banking and POS terminals?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Kuda"
+        },
+        {
+          "label": "B",
+          "text": "Moniepoint"
+        },
+        {
+          "label": "C",
+          "text": "PiggyVest"
+        },
+        {
+          "label": "D",
+          "text": "Cowrywise"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Moniepoint",
+      "explanation": "Moniepoint is associated with agent banking and POS terminals, which allow customers and businesses to carry out transactions through point-of-sale devices."
+    },
+    {
+      "id": 27,
+      "question": "PalmPay is primarily backed by which Chinese company?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tencent"
+        },
+        {
+          "label": "B",
+          "text": "Transsion Holdings"
+        },
+        {
+          "label": "C",
+          "text": "Alibaba"
+        },
+        {
+          "label": "D",
+          "text": "ByteDance"
+        }
+      ],
+      "correctOption": "B",
+      "answer": "Transsion Holdings",
+      "explanation": "Transsion Holdings is the company identified as PalmPay's primary backer in the supplied answer."
+    },
+    {
+      "id": 28,
+      "question": "Which company operates the \"OWealth\" interest-bearing wallet?",
+      "options": [
+        {
+          "label": "A",
+          "text": "OPay"
+        },
+        {
+          "label": "B",
+          "text": "PalmPay"
+        },
+        {
+          "label": "C",
+          "text": "FairMoney"
+        },
+        {
+          "label": "D",
+          "text": "Chipper Cash"
+        }
+      ],
+      "correctOption": "A",
+      "answer": "OPay",
+      "explanation": "OPay operates the OWealth wallet named in the question. An interest-bearing wallet allows eligible funds to earn returns."
+    },
+    {
+      "id": 29,
+      "question": "Jiji.ng is best described as:",
+      "options": [
+        {
+          "label": "A",
+          "text": "A payment company"
+        },
+        {
+          "label": "B",
+          "text": "A digital bank"
+        },
+        {
+          "label": "C",
+          "text": "An online classifieds / marketplace"
+        },
+        {
+          "label": "D",
+          "text": "A logistics company"
+        }
+      ],
+      "correctOption": "C",
+      "answer": "An online classifieds / marketplace",
+      "explanation": "Jiji.ng is an online classifieds marketplace where users can publish and browse listings to buy and sell products."
+    },
+    {
+      "id": 30,
+      "question": "Which platform is Nigeria's most popular online classifieds site for buying and selling used items?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Jumia"
+        },
+        {
+          "label": "B",
+          "text": "Konga"
+        },
+        {
+          "label": "C",
+          "text": "OLX"
+        },
+        {
+          "label": "D",
+          "text": "Jiji"
+        }
+      ],
+      "correctOption": "D",
+      "answer": "Jiji",
+      "explanation": "Jiji is the answer supplied. It is a classifieds platform where users can list items for sale and find second-hand products."
+    }
+  ]
+
+
+}

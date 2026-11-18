@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Group Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="./assests/download.png" alt="App Logo" />
+        </a>
+        <span> Group Challenge</span>
+      </div>
+      <div id="header-scoreboard" class="header-scoreboard" aria-label="Live scores" hidden></div>
+      <button id="reset-game" class="reset-game-btn" type="button" hidden>New setup</button>
+    </nav>
+
+    <div class="container">
+      <section id="game-setup" class="game-setup" aria-labelledby="setup-title">
+        <div class="setup-heading">
+          <span class="setup-kicker">Game setup</span>
+          <h1 id="setup-title">Create your challenge</h1>
+          <p>Set up 2 to 5 groups, then choose the rules for this game.</p>
+        </div>
+
+        <form id="setup-form">
+          <div class="question-set-field">
+            <label for="setup-question-set">Question set</label>
+            <select id="setup-question-set">
+              <option value="questions">Web Development</option>
+              <option value="alldepartmentQuestions">All Departments</option>
+            </select>
+            <small id="question-set-description">60 questions about HTML, CSS, and Bootstrap.</small>
+          </div>
+
+          <div class="setup-section-heading">
+            <div>
+              <h2>Groups</h2>
+              <p>Choose a name and color for each group.</p>
+            </div>
+            <button id="add-group" class="add-group-btn" type="button">+ Add group</button>
+          </div>
+          <div id="group-fields" class="group-fields"></div>
+
+          <div class="game-rules">
+            <div class="rule-field">
+              <label for="setup-time">Time per question</label>
+              <div class="number-field">
+                <input id="setup-time" type="number" min="10" max="600" value="180" required />
+                <small>seconds</small>
+              </div>
+            </div>
+            <div class="rule-field">
+              <label for="setup-winning-score">Winning score</label>
+              <div class="number-field">
+                <input id="setup-winning-score" type="number" min="1" max="100" value="10" required />
+                <small>points</small>
+              </div>
+            </div>
+            <div class="rule-field">
+              <label for="setup-point-value">Points for a correct answer</label>
+              <div class="number-field">
+                <input id="setup-point-value" type="number" min="1" max="20" value="1" required />
+                <small>points</small>
+              </div>
+            </div>
+          </div>
+          <p id="setup-error" class="setup-error" role="alert" hidden></p>
+          <button class="start-game-btn" type="submit">Start challenge →</button>
+        </form>
+      </section>
+
+      <div id="quiz-area" hidden>
+      <!-- Header -->
+      <div class="header">
+        <h1>Pick a Challenge</h1>
+        <div class="question-tracker">
+          Current Challenge:
+          <strong id="current-question-number">None</strong>
+        </div>
+      </div>
+
+      <!-- Question Grid -->
+      <div id="load-status" class="load-status">
+        <div role="status" aria-live="polite">
+          <h2 id="load-title">Loading challenges...</h2>
+          <p id="load-message">Your next challenge is on its way.</p>
+        </div>
+        <button id="retry-load" type="button" hidden>Try again</button>
+        <a id="load-home" href="index.html" hidden>Back to home</a>
+      </div>
+      <div class="question-grid" id="question-grid"></div>
+
+      <!-- Question Box -->
+      <div class="question-box" id="question-box" style="display: none">
+        <h2 id="question-text"></h2>
+        <div id="question-options" class="question-options" aria-label="Answer options" hidden></div>
+        <p class="countdown-label">
+          Time Remaining: <span id="countdown">180</span> seconds
+        </p>
+        <p id="round-status" role="status"></p>
+        <button id="show-answer" type="button" aria-controls="answer-panel" aria-expanded="false">Show answer</button>
+        <section id="answer-panel" class="answer-panel" hidden tabindex="-1" aria-labelledby="answer-heading">
+          <h3 id="answer-heading">Answer</h3>
+          <p id="answer-text"></p>
+          <h3>Why this is correct</h3>
+          <p id="answer-explanation"></p>
+        </section>
+        <div id="grading-controls" class="grading-controls" hidden>
+          <p>Did <strong id="grading-group">Group A</strong> answer correctly?</p>
+          <button id="mark-correct" class="grade-btn correct-btn" type="button">✓ Correct</button>
+          <button id="mark-incorrect" class="grade-btn incorrect-btn" type="button">✕ Incorrect</button>
+        </div>
+        <button id="back-to-grid" class="back-btn">
+          🔙 Back to Challenges
+        </button>
+      </div>
+      </div>
+
+      <!-- Preloader Countdown -->
+      <div class="preloader-overlay" id="preloader" style="display: none">
+        <div class="preloader-content">
+          <p id="preloader-count">3</p>
+          <p>Get Ready...</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="score-toast-backdrop" class="score-toast-backdrop" aria-hidden="true"></div>
+    <aside id="score-notification" class="score-notification" role="status" aria-live="polite" aria-atomic="true">
+      <span id="score-result-icon" class="score-result-icon"></span>
+      <div>
+        <strong id="score-result-title"></strong>
+        <p id="score-result-message"></p>
+        <div id="notification-scores" class="notification-scores"></div>
+      </div>
+    </aside>
+
+    <div id="winner-modal" class="winner-modal" hidden>
+      <div class="winner-backdrop"></div>
+      <section class="winner-dialog" role="dialog" aria-modal="true" aria-labelledby="winner-title" aria-describedby="winner-message">
+        <div class="winner-glow" aria-hidden="true"></div>
+        <div class="winner-trophy" aria-hidden="true">🏆</div>
+        <p class="winner-label">We have a winner!</p>
+        <h2 id="winner-title">Group A wins!</h2>
+        <p id="winner-message">A brilliant game and a well-earned victory.</p>
+        <div id="winner-final-score" class="winner-final-score" aria-label="Final scores"></div>
+        <div class="winner-actions">
+          <button id="continue-game" class="continue-game-btn" type="button">Continue playing</button>
+          <button id="new-game" class="new-game-btn" type="button">Start new setup</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="quiz.js"></script>
+  </body>
+</html>
